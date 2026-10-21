@@ -1,6 +1,6 @@
 {
-  "release": "2026-10-21-web-01",
-  "builtAt": "2026-10-21T16:35:01.294416+00:00",
+  "release": "2026-10-21-web-02",
+  "builtAt": "2026-10-21T22:18:07.650770+00:00",
   "baseNative": "2026-10-21-menu-input-05",
   "engine": "Godot 4.4.1",
   "threads": false,
@@ -9,39 +9,44 @@
   "npcClayRevision": "04",
   "files": [
     {
-      "path": "builds/2026-10-21-web-01/index.audio.position.worklet.js",
+      "path": "builds/2026-10-21-web-02/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-21-web-01/index.audio.worklet.js",
+      "path": "builds/2026-10-21-web-02/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-21-web-01/index.html",
+      "path": "builds/2026-10-21-web-02/index.html",
       "bytes": 5346,
-      "sha256": "e58a57ba8bbb92126bddb5167d40d24ac00c1b8cc8889f1fa963414c7e308ad4"
+      "sha256": "700618b04ef0ac781f2c8d39f412f0d0d94c00d15aa7329651bf2ba17067a0e5"
     },
     {
-      "path": "builds/2026-10-21-web-01/index.js",
+      "path": "builds/2026-10-21-web-02/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-21-web-01/index.pck",
-      "bytes": 23722464,
-      "sha256": "383b67d869003e04f468b8f303d08f6d3a700727a68b360e94219c528bfc2cc6"
+      "path": "builds/2026-10-21-web-02/index.pck",
+      "bytes": 23722656,
+      "sha256": "6d7faf4838851a0da8effbb0e2a1c449162e51863efef9e498f6b9a49867e04f"
     },
     {
-      "path": "builds/2026-10-21-web-01/index.png",
+      "path": "builds/2026-10-21-web-02/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-21-web-01/index.wasm",
+      "path": "builds/2026-10-21-web-02/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
+  ],
+  "audioPauseGuard": true,
+  "changes": [
+    "Send audio pause/resume only when state changes",
+    "Skip unchanged music volume updates"
   ]
 }
