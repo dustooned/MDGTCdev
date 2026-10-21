@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Playtest Mr. Duck Goes to College in your browser. A small campus, a neighborhood, and a little momentum.">
+  <title>Mr. Duck Goes to College · Beta</title>
+  <style>
+    :root{color-scheme:light;--ink:#183d43;--paper:#fff3d8;--gold:#f0c560;--muted:#446369}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 system-ui,sans-serif}
+    main{max-width:1100px;margin:auto;padding:44px 28px 60px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;font-weight:750}
+    .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;padding:28px 0 42px}h1{font:700 clamp(2.5rem,5vw,4.3rem)/1.08 Georgia,serif;margin:14px 0 24px;max-width:620px}
+    h2{font:700 1.65rem/1.2 Georgia,serif;margin:0 0 18px}p{margin:0 0 18px}.lede{font-size:1.15rem;max-width:560px}.quiet{color:var(--muted);font-size:.94rem}
+    .poster{width:100%;border:3px solid var(--ink);border-radius:28px 7px 28px 7px;box-shadow:10px 10px 0 #e6dcbf;display:block}
+    .play{display:inline-block;background:var(--ink);color:var(--paper);padding:14px 25px;text-decoration:none;border-radius:8px;font-size:1.1rem;font-weight:750;margin:8px 0 16px}
+    a{color:var(--ink);text-underline-offset:3px}a:focus-visible{outline:3px solid #a65b27;outline-offset:5px}.play:hover{background:#2b5960}
+    .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{border:2px solid var(--ink);border-radius:14px;padding:26px;background:#fffaed}dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:9px 20px}dt{font-weight:750}dd{margin:0}
+    .feedback{margin-top:26px;background:var(--gold);border-radius:14px;padding:26px}footer{margin-top:32px;border-top:1px solid #bac0b1;padding-top:20px;font-size:.84rem;display:flex;flex-wrap:wrap;gap:10px 22px}
+    @media(max-width:760px){main{padding:24px 20px}.hero,.cards{grid-template-columns:1fr}.hero{gap:25px}.poster{max-width:520px}dl{gap:8px 13px}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Public beta · Team &amp; student playtest</div>
+  <section class="hero" aria-labelledby="title">
+    <div>
+      <h1 id="title">Mr. Duck Goes<br>to College</h1>
+      <p class="lede">A neighborhood to explore, a campus to find, and a little momentum along the way.</p>
+      <p>Walk or skate, ask a neighbor, and try the handmade character look. This early demo is ready for you to mess with.</p>
+      <a class="play" href="./builds/2026-10-21-web-01/">Play the beta →</a>
+      <p class="quiet">No installation or account needed. Desktop browser recommended. Allow a moment for the first load.</p>
+    </div>
+    <img class="poster" src="./assets/npc-clay.png" width="960" height="640" alt="The orange-shirted duck guide with the current soft clay surface treatment, outside the campus building.">
+  </section>
+  <div class="cards">
+    <section class="card" aria-labelledby="controls"><h2 id="controls">Get moving</h2>
+      <dl><dt>Move</dt><dd>WASD / arrows · left stick</dd><dt>Look</dt><dd>Right mouse drag / IJKL · right stick</dd><dt>Jump</dt><dd>Space · A</dd><dt>Ask / inspect</dt><dd>E · X</dd><dt>Board</dt><dd>Q / Alt · View / Select</dd><dt>Pause</dt><dd>Escape / P · Start</dd></dl>
+      <p class="quiet" style="margin-top:18px">Click inside the game to focus it and enable sound. If using a controller, press a button after connecting it.</p>
+    </section>
+    <section class="card" aria-labelledby="try"><h2 id="try">A few things to try</h2>
+      <p>Explore the courtyard and downtown, find the route to campus, or stop and talk to a neighbor.</p>
+      <p>Open Settings and scroll to <strong>Clay texture strength</strong>. Try a stronger surface, or switch clay materials off for comparison.</p>
+      <p class="quiet">Menus: A selects, B goes back, and left/right adjusts sliders. Your discoveries and settings save in this browser; private browsing or clearing site data may reset them.</p>
+    </section>
+  </div>
+  <section class="feedback" aria-labelledby="feedback"><h2 id="feedback">Tell us what you notice</h2>
+    <p>Something confusing, broken, or fun? Include your browser, controls, what you tried, and what happened.</p>
+    <a href="https://github.com/dustooned/MDGTCdev/issues/new?template=bug-report.yml">Report a playtest finding on GitHub</a> · <a href="./feedback-template.txt" download>Download a feedback template</a>
+  </section>
+  <footer><span>Build 2026-10-21-web-01</span><a href="https://github.com/dustooned/MDGTCdev">Demo repository</a><a href="./legal/GODOT-LICENSE.txt">Godot license</a><a href="./legal/GODOT-COPYRIGHT.txt">Third-party notices</a></footer>
+</main>
+</body>
+</html>

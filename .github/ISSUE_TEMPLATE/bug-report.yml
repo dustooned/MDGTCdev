@@ -1,0 +1,26 @@
+name: Beta playtest feedback
+description: Tell us what happened while playing the public demo.
+title: "[Playtest] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Demo version
+      value: 2026-10-21-web-01
+  - type: input
+    id: setup
+    attributes:
+      label: Browser, device, and controls
+      placeholder: "Example: Chrome on Windows, Xbox controller"
+  - type: textarea
+    id: observation
+    attributes:
+      label: What happened?
+      description: What did you try, what happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps or screenshot
+      description: Help us reproduce it. You can attach a screenshot here.
