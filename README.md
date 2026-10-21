@@ -1,10 +1,10 @@
-# Mr. Duck Goes to College â€” public beta
+# Mr. Duck Goes to College — public beta
 
 **Play:** https://dustooned.github.io/MDGTCdev/
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-21-web-03**, based on native playtest **2026-10-21-skate-polish-06**. Skating now keeps steering consistent after tricks, turns through arcs, and uses a small ground pivot in place of backward stance. Wall jumps and double jumps have original board-crack and rising chip sounds. Includes the stronger NPC clay treatment, adjustable clay strength, controller menu fixes, zone music, and sound effects. Browser audio pause/resume is now sent only when its state changes; steady playback no longer restarts and copies the music buffer every frame.
+Current release: **2026-10-21-web-04**, based on native playtest **2026-10-21-skate-polish-06**. Skating now keeps steering consistent after tricks, turns through arcs, and uses a small ground pivot in place of backward stance. Wall jumps and double jumps have original board-crack and rising chip sounds. Includes the stronger NPC clay treatment, adjustable clay strength, controller menu fixes, zone music, and sound effects. Browser audio pause/resume is now sent only when its state changes; steady playback no longer restarts and copies the music buffer every frame.
 
 ## Playtest controls
 
