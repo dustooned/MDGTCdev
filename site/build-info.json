@@ -1,7 +1,7 @@
 {
-  "release": "2026-10-21-web-02",
-  "builtAt": "2026-10-21T22:18:07.650770+00:00",
-  "baseNative": "2026-10-21-menu-input-05",
+  "release": "2026-10-21-web-03",
+  "builtAt": "2026-10-21T23:02:48.098881+00:00",
+  "baseNative": "2026-10-21-skate-polish-06",
   "engine": "Godot 4.4.1",
   "threads": false,
   "musicTracks": 10,
@@ -9,44 +9,52 @@
   "npcClayRevision": "04",
   "files": [
     {
-      "path": "builds/2026-10-21-web-02/index.audio.position.worklet.js",
+      "path": "builds/2026-10-21-web-03/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-21-web-02/index.audio.worklet.js",
+      "path": "builds/2026-10-21-web-03/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-21-web-02/index.html",
-      "bytes": 5346,
-      "sha256": "700618b04ef0ac781f2c8d39f412f0d0d94c00d15aa7329651bf2ba17067a0e5"
+      "path": "builds/2026-10-21-web-03/index.html",
+      "bytes": 5345,
+      "sha256": "e9284e49a96d42f281e7e1648ca82335570661b8f6ebb522cc5ca9e890425a92"
     },
     {
-      "path": "builds/2026-10-21-web-02/index.js",
-      "bytes": 317142,
-      "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
+      "path": "builds/2026-10-21-web-03/index.js",
+      "bytes": 317140,
+      "sha256": "cf4817001e3278f850e59a7ee1fae955070140461ed3504d3da529ca372ed272"
     },
     {
-      "path": "builds/2026-10-21-web-02/index.pck",
-      "bytes": 23722656,
-      "sha256": "6d7faf4838851a0da8effbb0e2a1c449162e51863efef9e498f6b9a49867e04f"
+      "path": "builds/2026-10-21-web-03/index.pck",
+      "bytes": 23732624,
+      "sha256": "e091587ba78a548fab890808d9fd782d3ecefce254396f3d46415a718460000f"
     },
     {
-      "path": "builds/2026-10-21-web-02/index.png",
+      "path": "builds/2026-10-21-web-03/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-21-web-02/index.wasm",
+      "path": "builds/2026-10-21-web-03/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
   ],
   "audioPauseGuard": true,
   "changes": [
-    "Send audio pause/resume only when state changes",
-    "Skip unchanged music volume updates"
-  ]
+    "Consistent camera-relative steering after tricks; backward stance retired",
+    "Rounded ground turns with modest speed loss; explicit braking retained",
+    "Short forward-settling landing catch and ground pivot",
+    "Original board crack followed by rising chip tone on wall and double jumps",
+    "Successful jump events drive audio without duplicate ordinary pops"
+  ],
+  "skateControlPolish": true,
+  "jumpSoundRevision": "board-crack-chip-rise-01",
+  "targetedAutomatedAssertionsPassed": 1269,
+  "physicalControllerFeelVerified": false,
+  "independentListeningVerified": false
 }
