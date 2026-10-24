@@ -1,10 +1,13 @@
 {
-  "release": "2026-10-24-web-06",
-  "builtAt": "2026-10-24T21:30:07.662030+00:00",
-  "baseSource": "development/city-day (2026-10-24-city-day-02-web)",
+  "release": "2026-10-24-web-07",
+  "builtAt": "2026-10-24T21:48:33.000061+00:00",
+  "baseSource": "development/city-day (2026-10-24-city-day-03-web)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
+    "Breath of the Wild-style stamina wheel beside Mr. Duck: appears only while spent or refilling, drains by percentage, orange when low, fitness pips",
+    "Minimal travel HUD: clock and objective stay; footer only for contextual prompts",
+    "Commute debug header, full control help and debug pause entries behind F3 or a pause toggle (saved setting)",
     "Commute city hosts the neighbor favor: Nora downtown, Eli on campus, closet/food/rest in the apartment hall",
     "People speak in speech bubbles; their options are thought clouds that open paper cost cards",
     "Original commute HUD (status, route, stamina/fitness, controls, pause/settings) restyled in the paper palette; AC clock drives city lighting",
@@ -13,43 +16,43 @@
     "Rigged mrduck4 player model and type-only title card carried over from web-05"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 960,
+  "automatedAssertionsPassed": 971,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-24-web-06/index.audio.position.worklet.js",
+      "path": "builds/2026-10-24-web-07/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-24-web-06/index.audio.worklet.js",
+      "path": "builds/2026-10-24-web-07/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-24-web-06/index.html",
+      "path": "builds/2026-10-24-web-07/index.html",
       "bytes": 5325,
-      "sha256": "f4df5244ef08d57c4685194df60474ddce80f7eef28b2afd4f612648013ffb83"
+      "sha256": "407b21cf0db3ade729d7132c248d8e804c16084b4a2459b452eaa902296555b3"
     },
     {
-      "path": "builds/2026-10-24-web-06/index.js",
+      "path": "builds/2026-10-24-web-07/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-24-web-06/index.pck",
-      "bytes": 24192256,
-      "sha256": "9ad3391208e4dc432d7b95d2ff03b66dc51343cb2ea17b7e052f5a02b6eb4e3f"
+      "path": "builds/2026-10-24-web-07/index.pck",
+      "bytes": 24196400,
+      "sha256": "230612abd6c78b2d8ff2304a9ad45bda2acd1ae466867dbcb8065031660127db"
     },
     {
-      "path": "builds/2026-10-24-web-06/index.png",
+      "path": "builds/2026-10-24-web-07/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-24-web-06/index.wasm",
+      "path": "builds/2026-10-24-web-07/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
