@@ -1,54 +1,55 @@
 {
-  "release": "2026-10-24-web-05",
-  "builtAt": "2026-10-24T20:50:58.216051+00:00",
-  "baseNative": "2026-10-24-neighbor-01",
+  "release": "2026-10-24-web-06",
+  "builtAt": "2026-10-24T21:30:07.662030+00:00",
+  "baseSource": "development/city-day (2026-10-24-city-day-02-web)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
-    "Rigged mrduck4 player model (24-bone skeleton, idle / walk_in_place / crouch clips, eye and mouth atlas faces)",
-    "Skating, air, grind and bail states fall back to idle under the existing procedural poses",
-    "Opening card restyled as a title card (type and palette only; title artwork pending)",
-    "Neighbor favor, pockets, day clock and stamina from the neighbor preview"
+    "Commute city hosts the neighbor favor: Nora downtown, Eli on campus, closet/food/rest in the apartment hall",
+    "People speak in speech bubbles; their options are thought clouds that open paper cost cards",
+    "Original commute HUD (status, route, stamina/fitness, controls, pause/settings) restyled in the paper palette; AC clock drives city lighting",
+    "Sidewalk residents complain about city conditions before their tips",
+    "Rosa, a fixed Spanish-speaking resident at the downtown bus stop; understanding depends on the shared greeting",
+    "Rigged mrduck4 player model and type-only title card carried over from web-05"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "titleCardRevision": "type-01",
-  "automatedAssertionsPassed": 651,
+  "automatedAssertionsPassed": 960,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-24-web-05/index.audio.position.worklet.js",
+      "path": "builds/2026-10-24-web-06/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-24-web-05/index.audio.worklet.js",
+      "path": "builds/2026-10-24-web-06/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-24-web-05/index.html",
-      "bytes": 5330,
-      "sha256": "dcccfc9f0ed9a5cbd54553d10e3bd02998b16cab51ea684377a285564c61f7d7"
+      "path": "builds/2026-10-24-web-06/index.html",
+      "bytes": 5325,
+      "sha256": "f4df5244ef08d57c4685194df60474ddce80f7eef28b2afd4f612648013ffb83"
     },
     {
-      "path": "builds/2026-10-24-web-05/index.js",
+      "path": "builds/2026-10-24-web-06/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-24-web-05/index.pck",
-      "bytes": 24182400,
-      "sha256": "40637284d0955d4e10160e0ee556ed4f86c84a85d522a25c2fb43f572098a41d"
+      "path": "builds/2026-10-24-web-06/index.pck",
+      "bytes": 24192256,
+      "sha256": "9ad3391208e4dc432d7b95d2ff03b66dc51343cb2ea17b7e052f5a02b6eb4e3f"
     },
     {
-      "path": "builds/2026-10-24-web-05/index.png",
+      "path": "builds/2026-10-24-web-06/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-24-web-05/index.wasm",
+      "path": "builds/2026-10-24-web-06/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
