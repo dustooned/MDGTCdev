@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-25-web-17**, "City Day" with the downtown skateshop. GOOFY FOOT SKATES opens on the west block with its own sign, awning and door, six decks on the wall, and a placard that says it is hiring for a summer job that is not in yet. The shops now have street windows with a painted hint of what is inside, and the five businesses hiring for the summer tape a HELP WANTED card to the glass — art only. Saves from web-06 to web-16 carry over unchanged.
+Current release: **2026-10-25-web-18**, "City Day" with a smoother first look. Walking into the Pixel Parlor now eases the letterbox in and out instead of snapping, and the shot dollies the camera in a little before returning it exactly where it was. Builds from web-06 to web-17 keep their saves. A halftone shadow shader is now in the project — cast shadow as a rotated dot screen — but nothing uses it yet.
+
+Previous release: **2026-10-25-web-17**, "City Day" with the downtown skateshop. GOOFY FOOT SKATES opens on the west block with its own sign, awning and door, six decks on the wall, and a placard that says it is hiring for a summer job that is not in yet. The shops now have street windows with a painted hint of what is inside, and the five businesses hiring for the summer tape a HELP WANTED card to the glass — art only. Saves from web-06 to web-16 carry over unchanged.
 
 Previous release: **2026-10-25-web-16**, "City Day" with a cinematic first look. Walking into the Pixel Parlor now plays a short framed shot: letterbox bars close, the view holds for a fixed length, then the bars clear and control returns where it left off. The shot owns its length, so nothing can leave you stuck watching it. Saves from web-06 to web-15 carry over unchanged. Known: the downtown skateshop, shop windows and HELP WANTED signs are in progress and not finished in this build.
 
