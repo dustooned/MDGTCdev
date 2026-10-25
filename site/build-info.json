@@ -1,7 +1,7 @@
 {
   "release": "2026-10-24-web-09",
-  "builtAt": "2026-10-25T00:55:27.639016+00:00",
-  "baseSource": "development/city-day (2026-10-24-city-day-05-web)",
+  "builtAt": "2026-10-25T01:03:43.494132+00:00",
+  "baseSource": "development/city-day (2026-10-24-city-day-06-web)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
@@ -10,6 +10,7 @@
     "Ask the neighbors to help (6 min): fixes the vent without the lesson and is remembered as organizing help",
     "Nora thanks you once for what you actually did; the fixed vent stays fixed across days and reloads",
     "Older saves gain an empty airflow record on load",
+    "Requests: Seed favor and Airflow have their own tiles so every detail keeps the Back button on screen (fixed after the first web-09 upload)",
     "Nora's seed-favor desk keeps 9:00–18:00 hours for accepting and reporting; a closed desk says when to come back and spends nothing",
     "Missed hours never expire the favor: carried packets, Eli's handoff and a waiting report keep across days and reloads",
     "Later visits open with Nora remembering earlier help, before the current topic",
@@ -25,7 +26,7 @@
     "Rigged mrduck4 player model and type-only title card carried over from web-05"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 1075,
+  "automatedAssertionsPassed": 1083,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
@@ -43,7 +44,7 @@
     {
       "path": "builds/2026-10-24-web-09/index.html",
       "bytes": 5325,
-      "sha256": "32c75526afc4266895993297c68cb249e7182b6fb6e2307120c851dbd8123481"
+      "sha256": "cf83a4859621cbcf0877aa4166202ffbe7781335ccb405ab6ddf965d8733fac6"
     },
     {
       "path": "builds/2026-10-24-web-09/index.js",
@@ -52,8 +53,8 @@
     },
     {
       "path": "builds/2026-10-24-web-09/index.pck",
-      "bytes": 24224784,
-      "sha256": "7e24092c4839e187f54f737d3366921dc2dc71e1afa98c2be4df82a4c3059fd1"
+      "bytes": 24226784,
+      "sha256": "7e15caf444de94ad709803568ccf5d62e803991401ce972a90a5f4ba7dbebd14"
     },
     {
       "path": "builds/2026-10-24-web-09/index.png",
