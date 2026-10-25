@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-24-web-07**, "City Day" with a minimal travel HUD. A Breath of the Wild–style stamina wheel appears beside Mr. Duck only while stamina is spent or refilling, drains by percentage, and shows fitness as gold pips. The clock and objective stay on screen, prompts appear only when there is something to do, and the commute debug readouts and debug pause entries are behind F3 or a pause toggle.
+Current release: **2026-10-24-web-08**, "City Day" with Nora's favor desk. Nora takes seed-favor visits from 9:00 to 18:00. When she is closed, her speech bubble and the objective say when to come back. Nothing expires: a carried packet or a waiting report keeps for another day. Once you have helped, later visits open with Nora remembering it. Saves from web-06 and web-07 carry over unchanged.
+
+Previous release: **2026-10-24-web-07**, "City Day" with a minimal travel HUD. A Breath of the Wild–style stamina wheel appears beside Mr. Duck only while stamina is spent or refilling, drains by percentage, and shows fitness as gold pips. The clock and objective stay on screen, prompts appear only when there is something to do, and the commute debug readouts and debug pause entries are behind F3 or a pause toggle.
 
 Previous release: **2026-10-24-web-06**, "City Day". The full commute city (apartments, downtown, greenway, campus, bus, skating, residents) now hosts the neighbor favor. People talk in speech bubbles with thought-cloud choices; costs, pockets and menus use paper cards; the original commute HUD is restyled to match. Sidewalk residents complain about city conditions before their tips, and Rosa, at the downtown bus stop, speaks Spanish. What Mr. Duck understands depends on the greeting he learns from Eli.
 
