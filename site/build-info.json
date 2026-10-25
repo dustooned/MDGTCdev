@@ -1,10 +1,16 @@
 {
-  "release": "2026-10-24-web-11",
-  "builtAt": "2026-10-25T02:51:02.372253+00:00",
-  "baseSource": "development/city-day (2026-10-24-city-day-10-web)",
+  "release": "2026-10-24-web-12",
+  "builtAt": "2026-10-25T03:45:37.471808+00:00",
+  "baseSource": "development/city-day (2026-10-24-city-day-11-web)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
+    "Eli reacts after the greeting lesson instead of repeating his pitch; stage directions stay out of speech; Nora thanks you once",
+    "The seed handoff opens the pockets on the seeds with Give to Eli focused",
+    "Cost cards name the action (e.g. Practice a Spanish greeting?) and answer Yes · N min / Not now; 1 minute is singular; refused tries read Not quite yet",
+    "Exit buttons name where you are (Back to campus, Back downtown, Back to the apartments...); the pockets say Close pockets",
+    "Prompts warn when a place isn't ready and name who can help; refusals show on a fading paper toast; Saved is a brief nod",
+    "Cards fit their content; notes sit above buttons; a greyed-out Eat says why; nearby captions alternate heights",
     "Pixel Parlor arcade: a tenth placeholder interior behind a new gold door at the arcade marker on the west downtown block",
     "Six dark cabinets with lit screens, a token counter and a placard; nothing is playable and no arcade game runs",
     "Wall lettering turns cream on dark interior walls",
@@ -34,43 +40,43 @@
     "Rigged mrduck4 player model and type-only title card carried over from web-05"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 1362,
+  "automatedAssertionsPassed": 1410,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-24-web-11/index.audio.position.worklet.js",
+      "path": "builds/2026-10-24-web-12/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-24-web-11/index.audio.worklet.js",
+      "path": "builds/2026-10-24-web-12/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-24-web-11/index.html",
+      "path": "builds/2026-10-24-web-12/index.html",
       "bytes": 5325,
-      "sha256": "9af5520623e93ea339d45ef94917d5d1d7ceabf1368a4c7e9c19730d7edfea68"
+      "sha256": "87bc1d5354d1af19b0a9f392515cae2cae33dfaabe74d13d9c6f05fda1e8f33b"
     },
     {
-      "path": "builds/2026-10-24-web-11/index.js",
+      "path": "builds/2026-10-24-web-12/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-24-web-11/index.pck",
-      "bytes": 24245696,
-      "sha256": "81c9935ecee56a0c363d68cfc532e273fa111a6377b6301a459bb5c5ef250121"
+      "path": "builds/2026-10-24-web-12/index.pck",
+      "bytes": 24252272,
+      "sha256": "ce41f336ad7057ed9a16cb3a632f0b1156354f7af31f1f6f1c3422ad3bd4bde3"
     },
     {
-      "path": "builds/2026-10-24-web-11/index.png",
+      "path": "builds/2026-10-24-web-12/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-24-web-11/index.wasm",
+      "path": "builds/2026-10-24-web-12/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }

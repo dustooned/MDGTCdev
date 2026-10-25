@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-24-web-11**, "City Day" with the Pixel Parlor. The downtown arcade gets a tenth placeholder interior behind a gold door on the west block: six dark cabinets with lit screens, a token counter and a placard. Nothing is playable yet. Saves from web-06 to web-10 carry over unchanged.
+Current release: **2026-10-24-web-12**, "City Day" with the quest and card cleanup. Eli reacts after the greeting lesson instead of repeating it, Nora thanks you once, and the seed handoff opens your pockets on the seeds with Give ready. Cost cards name the action and answer Yes · N min / Not now. Exits name where you are. Refusals are warned in the prompt and shown on a fading paper note. Cards fit their content, and nearby captions no longer overlap. Saves from web-06 to web-11 carry over unchanged.
+
+Previous release: **2026-10-24-web-11**, "City Day" with the Pixel Parlor. The downtown arcade gets a tenth placeholder interior behind a gold door on the west block: six dark cabinets with lit screens, a token counter and a placard. Nothing is playable yet. Saves from web-06 to web-10 carry over unchanged.
 
 Previous release: **2026-10-24-web-10**, "City Day" with placeholder interiors. Nine doors marked with a gold mat now open into simple lit rooms: Administration, Records / Enrollment and Student Accounts on campus; Corner Market, Fix and Mix, Second Spin and the Community Room downtown; and two courtyard houses. Press E to go in; press E on the exit mat or walk out the doorway to leave. The rooms are placeholders with a readable placard and nobody inside. The learning-court temples have no interiors yet. Being inside is never saved, so saves from web-06 to web-09 carry over unchanged.
 
