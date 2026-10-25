@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-24-web-12**, "City Day" with the quest and card cleanup. Eli reacts after the greeting lesson instead of repeating it, Nora thanks you once, and the seed handoff opens your pockets on the seeds with Give ready. Cost cards name the action and answer Yes · N min / Not now. Exits name where you are. Refusals are warned in the prompt and shown on a fading paper note. Cards fit their content, and nearby captions no longer overlap. Saves from web-06 to web-11 carry over unchanged.
+Current release: **2026-10-25-web-13**, "City Day" with Mr. Duck's new eyes. The eyes are redrawn by hand, bigger and closer together, on a larger eye plate the game builds from the model's own, so they keep their drawn shape instead of stretching sideways. He blinks with the new open, half and closed frames; happy, sad, angry, surprise and dizzy are drawn for later. Saves from web-06 to web-12 carry over unchanged.
+
+Previous release: **2026-10-24-web-12**, "City Day" with the quest and card cleanup. Eli reacts after the greeting lesson instead of repeating it, Nora thanks you once, and the seed handoff opens your pockets on the seeds with Give ready. Cost cards name the action and answer Yes · N min / Not now. Exits name where you are. Refusals are warned in the prompt and shown on a fading paper note. Cards fit their content, and nearby captions no longer overlap. Saves from web-06 to web-11 carry over unchanged.
 
 Previous release: **2026-10-24-web-11**, "City Day" with the Pixel Parlor. The downtown arcade gets a tenth placeholder interior behind a gold door on the west block: six dark cabinets with lit screens, a token counter and a placard. Nothing is playable yet. Saves from web-06 to web-10 carry over unchanged.
 
