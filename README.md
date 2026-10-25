@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-25-web-14**, "City Day" with bigger eyes. The eye plate is 1.35 times larger again, so the hand-drawn eyes fill more of his face, and the plate no longer casts a faint shadow on his head. His open eyes, and the blink frames with them, sit lower to match his other expressions. Saves from web-06 to web-13 carry over unchanged.
+Current release: **2026-10-25-web-15**, "City Day" with skating poses. Mr. Duck rides goofy (right foot forward) and stands on the grip tape instead of through the deck. Pushing has a placeholder kick and new foot-scuff sounds. His eyes change with the move: effort when pushing or grinding, surprise when falling or bailing, delight on flips and grabs. Walking arms swing in time with the footsteps, and after talking to someone he is back on his board if he was riding. Saves from web-06 to web-14 carry over unchanged.
+
+Previous release: **2026-10-25-web-14**, "City Day" with bigger eyes. The eye plate is 1.35 times larger again, so the hand-drawn eyes fill more of his face, and the plate no longer casts a faint shadow on his head. His open eyes, and the blink frames with them, sit lower to match his other expressions. Saves from web-06 to web-13 carry over unchanged.
 
 Previous release: **2026-10-25-web-13**, "City Day" with Mr. Duck's new eyes. The eyes are redrawn by hand, bigger and closer together, on a larger eye plate the game builds from the model's own, so they keep their drawn shape instead of stretching sideways. He blinks with the new open, half and closed frames; happy, sad, angry, surprise and dizzy are drawn for later. Saves from web-06 to web-12 carry over unchanged.
 
