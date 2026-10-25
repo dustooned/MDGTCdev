@@ -1,10 +1,14 @@
 {
-  "release": "2026-10-24-web-09",
-  "builtAt": "2026-10-25T01:03:43.494132+00:00",
-  "baseSource": "development/city-day (2026-10-24-city-day-06-web)",
+  "release": "2026-10-24-web-10",
+  "builtAt": "2026-10-25T02:32:04.978550+00:00",
+  "baseSource": "development/city-day (2026-10-24-city-day-07-web)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
+    "Placeholder interiors behind nine doors marked by gold mats: Administration, Records / Enrollment and Student Accounts (campus); Corner Market, Fix and Mix, Second Spin and Community Room (downtown); two courtyard houses with new painted doors",
+    "Going in fades and faces the camera into the room; leave with E on the exit mat or by walking out the doorway, back at the same door with your camera",
+    "Each room has its name, a placeholder sign and one placard (shops keep their street text); no staff yet, and no learning-court temples or dungeons",
+    "Indoors the route line reads INSIDE and the objective distance counts from the door; being inside is never saved and spends no time",
     "Airflow exercise: a kept fan from the campus equipment desk; the supervised airflow bench teaches aiming it (90° connector) once",
     "Plaza vent on Common Ground uses the same rule at 180°: low (4 min, no stamina) or boost (2 min, 6 stamina); free quarter turns",
     "Ask the neighbors to help (6 min): fixes the vent without the lesson and is remembered as organizing help",
@@ -26,43 +30,43 @@
     "Rigged mrduck4 player model and type-only title card carried over from web-05"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 1083,
+  "automatedAssertionsPassed": 1298,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-24-web-09/index.audio.position.worklet.js",
+      "path": "builds/2026-10-24-web-10/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-24-web-09/index.audio.worklet.js",
+      "path": "builds/2026-10-24-web-10/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-24-web-09/index.html",
+      "path": "builds/2026-10-24-web-10/index.html",
       "bytes": 5325,
-      "sha256": "cf83a4859621cbcf0877aa4166202ffbe7781335ccb405ab6ddf965d8733fac6"
+      "sha256": "bd6b01e4b2549427aabc4f5a6096909c5ea86bd913a84674a98419d8523c4a3e"
     },
     {
-      "path": "builds/2026-10-24-web-09/index.js",
+      "path": "builds/2026-10-24-web-10/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-24-web-09/index.pck",
-      "bytes": 24226784,
-      "sha256": "7e15caf444de94ad709803568ccf5d62e803991401ce972a90a5f4ba7dbebd14"
+      "path": "builds/2026-10-24-web-10/index.pck",
+      "bytes": 24244032,
+      "sha256": "c7e883b5c045ff2739acaef32bcefa3d2b9471515dbda6255fead53d020034e5"
     },
     {
-      "path": "builds/2026-10-24-web-09/index.png",
+      "path": "builds/2026-10-24-web-10/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-24-web-09/index.wasm",
+      "path": "builds/2026-10-24-web-10/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }

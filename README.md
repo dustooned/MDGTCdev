@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-24-web-09**, "City Day" with the airflow exercise. Take a fan from the campus equipment desk and learn to aim it at the airflow bench (its connector is marked 90°). Then use the same rule on the Common Ground vent (180°): run it on low for no stamina, or boost for less time. You can also ask the neighbors to help, which fixes the vent without the lesson. Nora thanks you once for what you actually did. Saves from web-06 to web-08 carry over.
+Current release: **2026-10-24-web-10**, "City Day" with placeholder interiors. Nine doors marked with a gold mat now open into simple lit rooms: Administration, Records / Enrollment and Student Accounts on campus; Corner Market, Fix and Mix, Second Spin and the Community Room downtown; and two courtyard houses. Press E to go in; press E on the exit mat or walk out the doorway to leave. The rooms are placeholders with a readable placard and nobody inside. The learning-court temples have no interiors yet. Being inside is never saved, so saves from web-06 to web-09 carry over unchanged.
+
+Previous release: **2026-10-24-web-09**, "City Day" with the airflow exercise. Take a fan from the campus equipment desk and learn to aim it at the airflow bench (its connector is marked 90°). Then use the same rule on the Common Ground vent (180°): run it on low for no stamina, or boost for less time. You can also ask the neighbors to help, which fixes the vent without the lesson. Nora thanks you once for what you actually did. Saves from web-06 to web-08 carry over.
 
 Previous release: **2026-10-24-web-08**, "City Day" with Nora's favor desk. Nora takes seed-favor visits from 9:00 to 18:00. When she is closed, her speech bubble and the objective say when to come back. Nothing expires: a carried packet or a waiting report keeps for another day. Once you have helped, later visits open with Nora remembering it. Saves from web-06 and web-07 carry over unchanged.
 
