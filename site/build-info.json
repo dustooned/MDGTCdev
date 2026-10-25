@@ -1,93 +1,56 @@
-{
-  "release": "2026-10-25-web-15",
-  "builtAt": "2026-10-25T18:05:21.733803+00:00",
-  "baseSource": "development/city-day (2026-10-25-city-day-14-web)",
-  "engine": "Godot 4.4.1",
-  "threads": false,
-  "changes": [
-    "Skating poses: Mr. Duck rides goofy and stands on the deck's grip tape instead of through it; crouch, air, flip, grind, manual, landing and bail each get a simple procedural pose",
-    "Pushing: a placeholder kick (back leg reaches behind, arms swing against it) with two new foot-scuff sounds",
-    "Eyes follow the move: effort, surprise, delight, relief and dizzy after a bail",
-    "Walking arms swing in time with the footstep sounds",
-    "Talking to someone no longer puts the board away for good: he is back on it afterward if he was riding",
-    "Eyes 1.35x bigger again: the eye plate is now about 2.15x the model's in each direction, and it no longer casts a shadow on the head",
-    "The open eyes, with the half and closed blink frames, sit 34 px lower to match the other expressions",
-    "Mr. Duck's eyes are redrawn by hand: bigger, closer together, on a 2560 x 640 sheet of eight expressions (open, half, closed, happy, sad, angry, surprise, dizzy)",
-    "A larger eye plate (1.25x wider, 1.6x taller) is built at load from the model's own plate and stays skinned to the head, so the eyes keep their drawn shape",
-    "Eli reacts after the greeting lesson instead of repeating his pitch; stage directions stay out of speech; Nora thanks you once",
-    "The seed handoff opens the pockets on the seeds with Give to Eli focused",
-    "Cost cards name the action (e.g. Practice a Spanish greeting?) and answer Yes · N min / Not now; 1 minute is singular; refused tries read Not quite yet",
-    "Exit buttons name where you are (Back to campus, Back downtown, Back to the apartments...); the pockets say Close pockets",
-    "Prompts warn when a place isn't ready and name who can help; refusals show on a fading paper toast; Saved is a brief nod",
-    "Cards fit their content; notes sit above buttons; a greyed-out Eat says why; nearby captions alternate heights",
-    "Pixel Parlor arcade: a tenth placeholder interior behind a new gold door at the arcade marker on the west downtown block",
-    "Six dark cabinets with lit screens, a token counter and a placard; nothing is playable and no arcade game runs",
-    "Wall lettering turns cream on dark interior walls",
-    "Doors take over the street marker they replace: anywhere the shop or arcade 'Look around' used to answer now offers Go inside",
-    "Placeholder interiors behind nine doors marked by gold mats: Administration, Records / Enrollment and Student Accounts (campus); Corner Market, Fix and Mix, Second Spin and Community Room (downtown); two courtyard houses with new painted doors",
-    "Going in fades and faces the camera into the room; leave with E on the exit mat or by walking out the doorway, back at the same door with your camera",
-    "Each room has its name, a placeholder sign and one placard (shops keep their street text); no staff yet, and no learning-court temples or dungeons",
-    "Indoors the route line reads INSIDE and the objective distance counts from the door; being inside is never saved and spends no time",
-    "Airflow exercise: a kept fan from the campus equipment desk; the supervised airflow bench teaches aiming it (90° connector) once",
-    "Plaza vent on Common Ground uses the same rule at 180°: low (4 min, no stamina) or boost (2 min, 6 stamina); free quarter turns",
-    "Ask the neighbors to help (6 min): fixes the vent without the lesson and is remembered as organizing help",
-    "Nora thanks you once for what you actually did; the fixed vent stays fixed across days and reloads",
-    "Older saves gain an empty airflow record on load",
-    "Requests: Seed favor and Airflow have their own tiles so every detail keeps the Back button on screen (fixed after the first web-09 upload)",
-    "Nora's seed-favor desk keeps 9:00–18:00 hours for accepting and reporting; a closed desk says when to come back and spends nothing",
-    "Missed hours never expire the favor: carried packets, Eli's handoff and a waiting report keep across days and reloads",
-    "Later visits open with Nora remembering earlier help, before the current topic",
-    "Saves from web-06 and web-07 load unchanged (hours are not saved)",
-    "Breath of the Wild-style stamina wheel beside Mr. Duck: appears only while spent or refilling, drains by percentage, orange when low, fitness pips",
-    "Minimal travel HUD: clock and objective stay; footer only for contextual prompts",
-    "Commute debug header, full control help and debug pause entries behind F3 or a pause toggle (saved setting)",
-    "Commute city hosts the neighbor favor: Nora downtown, Eli on campus, closet/food/rest in the apartment hall",
-    "People speak in speech bubbles; their options are thought clouds that open paper cost cards",
-    "Original commute HUD (status, route, stamina/fitness, controls, pause/settings) restyled in the paper palette; AC clock drives city lighting",
-    "Sidewalk residents complain about city conditions before their tips",
-    "Rosa, a fixed Spanish-speaking resident at the downtown bus stop; understanding depends on the shared greeting",
-    "Rigged mrduck4 player model and type-only title card carried over from web-05"
-  ],
-  "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 1445,
-  "physicalControllerFeelVerified": false,
-  "humanPlaytested": false,
-  "textEncoding": "UTF-8",
-  "files": [
-    {
-      "path": "builds/2026-10-25-web-15/index.audio.position.worklet.js",
-      "bytes": 3149,
-      "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
-    },
-    {
-      "path": "builds/2026-10-25-web-15/index.audio.worklet.js",
-      "bytes": 7298,
-      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
-    },
-    {
-      "path": "builds/2026-10-25-web-15/index.html",
-      "bytes": 5325,
-      "sha256": "627df53140e23a1490db1d7d8a233363d72d2c5bfcac8d71b270317c9e147446"
-    },
-    {
-      "path": "builds/2026-10-25-web-15/index.js",
-      "bytes": 317142,
-      "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
-    },
-    {
-      "path": "builds/2026-10-25-web-15/index.pck",
-      "bytes": 24324048,
-      "sha256": "3c8f92235a4ab17c6ab9368d337f4a40e138b21b520d023c8d96382d62220da6"
-    },
-    {
-      "path": "builds/2026-10-25-web-15/index.png",
-      "bytes": 21443,
-      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
-    },
-    {
-      "path": "builds/2026-10-25-web-15/index.wasm",
-      "bytes": 43699190,
-      "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
-    }
-  ]
+﻿{
+    "release":  "2026-10-25-web-16",
+    "builtAt":  "2026-10-25T20:32:41.526253+00:00",
+    "baseSource":  "development/city-day (current working copy)",
+    "engine":  "Godot 4.4.1",
+    "threads":  false,
+    "changes":  [
+                    "Cinematic event director: a shot runs for a fixed length and hands control back at a known frame, with its own letterbox and HUD mask",
+                    "The Pixel Parlor plays a framed first look when you walk in; the bars fade out when the shot ends",
+                    "State changes commit only when a cinematic finishes or is skipped, never while it plays",
+                    "Thirty-two director assertions and eighteen interior-cinematic assertions pass headless"
+                ],
+    "playerModel":  "mrduck4_rig_test.glb",
+    "automatedAssertionsPassed":  1410,
+    "physicalControllerFeelVerified":  false,
+    "humanPlaytested":  false,
+    "textEncoding":  "UTF-8",
+    "files":  [
+                  {
+                      "path":  "builds/2026-10-25-web-16/index.audio.position.worklet.js",
+                      "bytes":  3149,
+                      "sha256":  "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
+                  },
+                  {
+                      "path":  "builds/2026-10-25-web-16/index.audio.worklet.js",
+                      "bytes":  7298,
+                      "sha256":  "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+                  },
+                  {
+                      "path":  "builds/2026-10-25-web-16/index.html",
+                      "bytes":  5325,
+                      "sha256":  "d548f9c8d56be9ba22c8295eb5a975f74743d51b6cb6a2209dcc5237315106b0"
+                  },
+                  {
+                      "path":  "builds/2026-10-25-web-16/index.js",
+                      "bytes":  317142,
+                      "sha256":  "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
+                  },
+                  {
+                      "path":  "builds/2026-10-25-web-16/index.pck",
+                      "bytes":  24351312,
+                      "sha256":  "3d90251ca6ec024a80f675750ad6b73263ef60015d8ee50b0b58e53dca726e44"
+                  },
+                  {
+                      "path":  "builds/2026-10-25-web-16/index.png",
+                      "bytes":  21443,
+                      "sha256":  "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+                  },
+                  {
+                      "path":  "builds/2026-10-25-web-16/index.wasm",
+                      "bytes":  43699190,
+                      "sha256":  "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
+                  }
+              ],
+    "automatedAssertionsNote":  "not re-counted for web-16; adds 32 director and 18 interior-cinematic assertions"
 }
