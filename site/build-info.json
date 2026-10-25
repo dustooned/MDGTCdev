@@ -1,14 +1,16 @@
 {
-    "release":  "2026-10-25-web-16",
-    "builtAt":  "2026-10-25T20:32:41.526253+00:00",
+    "release":  "2026-10-25-web-17",
+    "builtAt":  "2026-10-25T20:41:52.924452+00:00",
     "baseSource":  "development/city-day (current working copy)",
     "engine":  "Godot 4.4.1",
     "threads":  false,
     "changes":  [
-                    "Cinematic event director: a shot runs for a fixed length and hands control back at a known frame, with its own letterbox and HUD mask",
-                    "The Pixel Parlor plays a framed first look when you walk in; the bars fade out when the shot ends",
-                    "State changes commit only when a cinematic finishes or is skipped, never while it plays",
-                    "Thirty-two director assertions and eighteen interior-cinematic assertions pass headless"
+                    "GOOFY FOOT SKATES: a downtown skateshop with its own sign, awning, door and placeholder interior, six decks on the wall and a placard that says the summer job isn\u0027t in yet",
+                    "Street windows on the businesses with a painted hint of what is inside the glass",
+                    "HELP WANTED cards on the five places hiring for the summer (art only, no job yet)",
+                    "Window-hint parts now keep their own pane\u0027s name, so each pane\u0027s detail counts and draws as intended",
+                    "The skateshop sign belongs to the room it labels",
+                    "Cinematic first look in the Pixel Parlor, as in web-16"
                 ],
     "playerModel":  "mrduck4_rig_test.glb",
     "automatedAssertionsPassed":  1410,
@@ -17,44 +19,45 @@
     "textEncoding":  "UTF-8",
     "files":  [
                   {
-                      "path":  "builds/2026-10-25-web-16/index.audio.position.worklet.js",
+                      "path":  "builds/2026-10-25-web-17/index.audio.position.worklet.js",
                       "bytes":  3149,
                       "sha256":  "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
                   },
                   {
-                      "path":  "builds/2026-10-25-web-16/index.audio.worklet.js",
+                      "path":  "builds/2026-10-25-web-17/index.audio.worklet.js",
                       "bytes":  7298,
                       "sha256":  "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
                   },
                   {
-                      "path":  "builds/2026-10-25-web-16/index.html",
+                      "path":  "builds/2026-10-25-web-17/index.html",
                       "bytes":  5325,
-                      "sha256":  "d548f9c8d56be9ba22c8295eb5a975f74743d51b6cb6a2209dcc5237315106b0"
+                      "sha256":  "7a6a025ad28e2b46e2b7b7a4c59b5d2f2430f1d9890d718d47e07a2e97877c8f"
                   },
                   {
-                      "path":  "builds/2026-10-25-web-16/index.js",
+                      "path":  "builds/2026-10-25-web-17/index.js",
                       "bytes":  317142,
                       "sha256":  "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
                   },
                   {
-                      "path":  "builds/2026-10-25-web-16/index.pck",
-                      "bytes":  24351312,
-                      "sha256":  "3d90251ca6ec024a80f675750ad6b73263ef60015d8ee50b0b58e53dca726e44"
+                      "path":  "builds/2026-10-25-web-17/index.pck",
+                      "bytes":  24351696,
+                      "sha256":  "824250d1589b789575492a0d30a509e515314490dc8ea3e4aedd4c7191e9d473"
                   },
                   {
-                      "path":  "builds/2026-10-25-web-16/index.png",
+                      "path":  "builds/2026-10-25-web-17/index.png",
                       "bytes":  21443,
                       "sha256":  "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
                   },
                   {
-                      "path":  "builds/2026-10-25-web-16/index.wasm",
+                      "path":  "builds/2026-10-25-web-17/index.png.import",
+                      "bytes":  760,
+                      "sha256":  "b427d612543b7d67228215ad55f3351c3264ecd7ab1001d5c1c623a5016b4d8a"
+                  },
+                  {
+                      "path":  "builds/2026-10-25-web-17/index.wasm",
                       "bytes":  43699190,
                       "sha256":  "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
                   }
               ],
-    "automatedAssertionsNote":  "not re-counted for web-16; adds 32 director and 18 interior-cinematic assertions",
-    "knownIssues":  [
-                        "The downtown skateshop, shop windows and HELP WANTED signs are in progress and not finished in this build.",
-                        "Eleven interior window and storefront checks currently fail; they cover this unfinished work, not the cinematic."
-                    ]
+    "automatedAssertionsNote":  "City Day interior suite: 438 assertions, 0 failures. Director and interior-cinematic suites: 32 and 18, 0 failures. Full verify.py not re-run."
 }
