@@ -1,10 +1,15 @@
 {
-  "release": "2026-10-24-web-08",
-  "builtAt": "2026-10-25T00:08:13.725763+00:00",
-  "baseSource": "development/city-day (2026-10-24-city-day-04-web)",
+  "release": "2026-10-24-web-09",
+  "builtAt": "2026-10-25T00:55:27.639016+00:00",
+  "baseSource": "development/city-day (2026-10-24-city-day-05-web)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
+    "Airflow exercise: a kept fan from the campus equipment desk; the supervised airflow bench teaches aiming it (90° connector) once",
+    "Plaza vent on Common Ground uses the same rule at 180°: low (4 min, no stamina) or boost (2 min, 6 stamina); free quarter turns",
+    "Ask the neighbors to help (6 min): fixes the vent without the lesson and is remembered as organizing help",
+    "Nora thanks you once for what you actually did; the fixed vent stays fixed across days and reloads",
+    "Older saves gain an empty airflow record on load",
     "Nora's seed-favor desk keeps 9:00–18:00 hours for accepting and reporting; a closed desk says when to come back and spends nothing",
     "Missed hours never expire the favor: carried packets, Eli's handoff and a waiting report keep across days and reloads",
     "Later visits open with Nora remembering earlier help, before the current topic",
@@ -20,43 +25,43 @@
     "Rigged mrduck4 player model and type-only title card carried over from web-05"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 1012,
+  "automatedAssertionsPassed": 1075,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-24-web-08/index.audio.position.worklet.js",
+      "path": "builds/2026-10-24-web-09/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-24-web-08/index.audio.worklet.js",
+      "path": "builds/2026-10-24-web-09/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-24-web-08/index.html",
+      "path": "builds/2026-10-24-web-09/index.html",
       "bytes": 5325,
-      "sha256": "029f823a74d111f4e039c6af4cb8115df28892050928a90438ae27e46d83d523"
+      "sha256": "32c75526afc4266895993297c68cb249e7182b6fb6e2307120c851dbd8123481"
     },
     {
-      "path": "builds/2026-10-24-web-08/index.js",
+      "path": "builds/2026-10-24-web-09/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-24-web-08/index.pck",
-      "bytes": 24202960,
-      "sha256": "d974d68222f7452fe74a14ca490fac18068a07c3a57fc0a64dc9e0a4034764f3"
+      "path": "builds/2026-10-24-web-09/index.pck",
+      "bytes": 24224784,
+      "sha256": "7e24092c4839e187f54f737d3366921dc2dc71e1afa98c2be4df82a4c3059fd1"
     },
     {
-      "path": "builds/2026-10-24-web-08/index.png",
+      "path": "builds/2026-10-24-web-09/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-24-web-08/index.wasm",
+      "path": "builds/2026-10-24-web-09/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
