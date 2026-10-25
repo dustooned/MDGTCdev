@@ -1,10 +1,14 @@
 {
-  "release": "2026-10-25-web-20",
-  "builtAt": "2026-10-25T22:04:20.582907+00:00",
-  "baseSource": "development/city-day (game source commit d7acf3b)",
+  "release": "2026-10-25-web-21",
+  "builtAt": "2026-10-25T22:57:49.399105+00:00",
+  "baseSource": "development/city-day (game source commit a5c7b74)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
+    "Ancient dungeon staging for the Forge and Room 2: dark fog, flickering braziers, tall stone walls, columns, a glyph band and watching stone faces",
+    "First-visit arrival shot under the watching face with a title card (THE FORGE / Hall of Controlled Motion, ROOM 2 / The Overgrown Mind)",
+    "Gate moments: the camera cuts to a sealed gate as it rumbles and sinks, then hands control back",
+    "Mythic rewrite of the dungeon text; five original synthesized dungeon sounds (two room drones, title boom, gate rumble, solve chime)",
     "Universal halftone: 1662 world surfaces draw cast shadows as a dot screen, outdoors and in every room",
     "Dot size follows view distance in cross-faded octaves around the gameplay camera distance, so far shadows stay fine",
     "Characters, glass, glowing screens and double-sided surfaces keep their own materials; unshadowed street lamps stay smooth",
@@ -18,43 +22,43 @@
     "A halftone shadow shader now exists for hand-painted surfaces: cast shadow becomes a rotated dot screen instead of a smooth gradient. Not applied to any scene yet"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 1795,
+  "automatedAssertionsPassed": 1812,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-25-web-20/index.audio.position.worklet.js",
+      "path": "builds/2026-10-25-web-21/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-25-web-20/index.audio.worklet.js",
+      "path": "builds/2026-10-25-web-21/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-25-web-20/index.html",
+      "path": "builds/2026-10-25-web-21/index.html",
       "bytes": 5325,
-      "sha256": "bcc689daecda408cd6d8bacaa1d3d74abb8e8b73f88c8375d76b6e8a5f784e4e"
+      "sha256": "6c13651b6b06c5ffa2e19c3d40c409c668968cee9feccf749ed359eaa91b931a"
     },
     {
-      "path": "builds/2026-10-25-web-20/index.js",
+      "path": "builds/2026-10-25-web-21/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-25-web-20/index.pck",
-      "bytes": 24393168,
-      "sha256": "bb7db9c5d430ae08de7882efe45620ef5c1429b8eb3adb8c59d0a5f2e2178155"
+      "path": "builds/2026-10-25-web-21/index.pck",
+      "bytes": 24573792,
+      "sha256": "2f6f36c8a1fde7e6d5bdea707048d89772c0ad58f176a6ed2ba9b2a08276780d"
     },
     {
-      "path": "builds/2026-10-25-web-20/index.png",
+      "path": "builds/2026-10-25-web-21/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-25-web-20/index.wasm",
+      "path": "builds/2026-10-25-web-21/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
