@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tester checklist, controls, controller checks and questions for the Mr. Duck Goes to College web-12 playtest.">
+<title>Mr. Duck Playtest</title>
+<style>
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("fonts/Atkinson-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Lilita One"; src: url("fonts/LilitaOne.ttf") format("truetype"); font-display: swap; }
+/* Layout: one paper sheet per step, in play order, on a quiet desk; facilitator results at the end. */
+:root {
+  --desk: #efe6cf;
+  --paper: #fff8e7;
+  --ink: #25464b;
+  --muted: #5a6f6b;
+  --teal: #286560;
+  --teal-ink: #fff8e7;
+  --gold: #e7ad4d;
+  --mint: #dcebdd;
+  --line: #d9ccaa;
+  --warn: #a6533a;
+  --ok: #2f6b4f;
+  --display: "Lilita One", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --step-1: clamp(1.55rem, 1.2rem + 1.6vw, 2.35rem);
+  --step-0: 1.18rem;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --desk: #162527; --paper: #1f3336; --ink: #f2ead4; --muted: #b3c3bd; --teal: #4f9a90; --teal-ink: #10201f;
+  --gold: #e9b45a; --mint: #26433f; --line: #35504f; --warn: #e08a6b; --ok: #79c39a; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --desk: #162527; --paper: #1f3336; --ink: #f2ead4; --muted: #b3c3bd; --teal: #4f9a90; --teal-ink: #10201f;
+  --gold: #e9b45a; --mint: #26433f; --line: #35504f; --warn: #e08a6b; --ok: #79c39a; color-scheme: dark }
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--desk); color: var(--ink); font: 400 1rem/1.55 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 64px; }
+.wrap { max-width: 860px; margin: 0 auto; display: grid; gap: 22px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: .01em; text-wrap: balance; margin: 0; line-height: 1.1; }
+h1 { font-size: clamp(2.2rem, 1.6rem + 3vw, 3.4rem); }
+h2 { font-size: var(--step-1); }
+h3 { font-size: var(--step-0); }
+p { margin: 0; max-width: 68ch; }
+a { color: var(--teal); text-underline-offset: 3px; }
+.eyebrow { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.sheet { background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: clamp(18px, 3vw, 32px); display: grid; gap: 16px; }
+.sheet > header { display: grid; gap: 6px; }
+.hero { display: grid; gap: 14px; }
+.hero .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; font-size: .85rem; color: var(--muted); }
+.tag b { color: var(--ink); }
+.cta { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: var(--teal-ink); font-family: var(--display); font-size: 1.15rem;
+  padding: 12px 22px; border-radius: 14px; text-decoration: none; border: 2px solid transparent; width: fit-content; }
+.cta:hover { border-color: var(--gold); }
+.facil { background: var(--mint); border-radius: 16px; padding: 14px 18px; display: grid; gap: 6px; }
+ul.steps { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 70ch; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: .96rem; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+kbd { font: 700 .86rem var(--body); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 0 6px; background: var(--desk); white-space: nowrap; }
+.ticks { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }
+.tick { display: flex; gap: 10px; align-items: flex-start; padding: 9px 12px; border: 1px solid var(--line); border-radius: 12px; cursor: pointer; }
+.tick input { margin-top: 4px; accent-color: var(--teal); width: 18px; height: 18px; flex: none; }
+.tick:has(input:checked) { background: var(--mint); border-color: var(--teal); }
+.check-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px 16px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.check-row:last-of-type { border-bottom: 0; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.seg label { padding: 6px 12px; cursor: pointer; font-size: .92rem; border-right: 1px solid var(--line); white-space: nowrap; }
+.seg label:last-child { border-right: 0; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg label:has(input:checked) { background: var(--teal); color: var(--teal-ink); }
+.seg label:has(input:focus-visible) { outline: 3px solid var(--gold); outline-offset: -3px; }
+.q { display: grid; gap: 10px; padding-block: 6px; }
+.q + .q { border-top: 1px dashed var(--line); padding-top: 18px; }
+.q .ask { font-weight: 700; font-size: 1.05rem; max-width: 68ch; }
+.q .why { color: var(--muted); font-size: .9rem; }
+.choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.pill input { accent-color: var(--teal); }
+.pill:has(input:checked) { background: var(--mint); border-color: var(--teal); }
+textarea, input[type="text"], input[type="number"] { width: 100%; font: inherit; color: var(--ink); background: var(--desk); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+textarea { min-height: 84px; resize: vertical; }
+input[type="number"] { max-width: 9rem; font-variant-numeric: tabular-nums; }
+textarea:focus-visible, input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.field { display: grid; gap: 6px; }
+.field label { font-weight: 700; }
+.row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.save-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+button { font: inherit; cursor: pointer; border-radius: 14px; padding: 11px 20px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+button.primary { background: var(--teal); color: var(--teal-ink); border-color: var(--teal); font-family: var(--display); font-size: 1.12rem; letter-spacing: .02em; }
+button:disabled { opacity: .55; cursor: default; }
+.status { font-size: .95rem; color: var(--muted); }
+.status.ok { color: var(--ok); font-weight: 700; }
+.status.warn { color: var(--warn); font-weight: 700; }
+.copybox { width: 100%; min-height: 160px; font: .9rem/1.45 ui-monospace, Consolas, monospace; }
+.resp-list { display: grid; gap: 12px; }
+.resp { border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; display: grid; gap: 8px; }
+.resp .top { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; justify-content: space-between; }
+.resp .facts { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: .82rem; border-radius: 999px; padding: 2px 10px; background: var(--mint); }
+.chip.trouble { background: transparent; border: 1px solid var(--warn); color: var(--warn); }
+.resp pre { margin: 0; white-space: pre-wrap; font: .9rem/1.5 var(--body); max-height: 360px; overflow: auto; background: var(--desk); border-radius: 12px; padding: 12px; }
+details summary { cursor: pointer; color: var(--teal); font-weight: 700; }
+.empty { color: var(--muted); }
+.small { font-size: .9rem; color: var(--muted); }
+@media (max-width: 560px) { .check-row { grid-template-columns: 1fr; } .seg label { padding: 6px 9px; } }
+@media (prefers-reduced-motion: no-preference) { .tick, .pill, .seg label { transition: background-color .15s ease, border-color .15s ease; } }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <section class="sheet hero" aria-labelledby="title">
+    <span class="eyebrow">Playtest · build 2026-10-24-web-12</span>
+    <h1 id="title">Mr. Duck Playtest</h1>
+    <p>Thanks for playing! It takes about 30 to 40 minutes: play one day in <em>Mr. Duck Goes to College</em>, then answer a few questions. There are no wrong answers. If something confused you, that is exactly what we want to hear.</p>
+    <div class="tags">
+      <span class="tag"><b>About 25 min</b> playing</span>
+      <span class="tag"><b>About 10 min</b> questions</span>
+      <span class="tag">Keyboard or controller</span>
+    </div>
+    <a class="cta" id="play-link" href="../builds/2026-10-24-web-12/" target="_blank" rel="noopener">Open the game ↗</a>
+    <p class="small"><a href="../">Back to the beta page</a></p>
+  </section>
+
+  <section class="sheet" aria-labelledby="before">
+    <header><span class="eyebrow">Step 1</span><h2 id="before">Before you play</h2></header>
+    <ul class="steps">
+      <li>Use a laptop or desktop with Chrome, Edge or Firefox. Turn the sound on if you can.</li>
+      <li>Playing with a controller? Plug it in <b>before</b> opening the game, then press a button once it loads.</li>
+      <li>On the title card, choose <b>Start a new test day</b> so you begin fresh. It only clears a test day saved in this browser.</li>
+      <li>Note the time you start. If someone is watching, try saying what you're thinking as you play.</li>
+      <li>Keep this page open for the controls below. Try not to read the questions until you've played.</li>
+    </ul>
+    <h3>Controls</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">To…</th><th scope="col">Keyboard</th><th scope="col">Controller</th></tr></thead>
+        <tbody>
+          <tr><td>Walk</td><td><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> or arrows</td><td>Left stick or D-pad</td></tr>
+          <tr><td>Look around</td><td>Right-drag the mouse, or <kbd>I</kbd> <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd></td><td>Right stick</td></tr>
+          <tr><td>Put the camera behind Mr. Duck</td><td><kbd>C</kbd></td><td><kbd>RB</kbd></td></tr>
+          <tr><td>Talk, read, or go through a door</td><td><kbd>E</kbd></td><td><kbd>X</kbd></td></tr>
+          <tr><td>Pick a thought while talking</td><td>Arrows to aim, <kbd>Enter</kbd> to look, <kbd>Enter</kbd> again to choose</td><td>Left stick to aim, <kbd>A</kbd> to look, <kbd>A</kbd> again to choose</td></tr>
+          <tr><td>Say yes on a card</td><td><kbd>Enter</kbd></td><td><kbd>A</kbd></td></tr>
+          <tr><td>Back out of a card, or speed up talking</td><td><kbd>Esc</kbd> / <kbd>Backspace</kbd></td><td><kbd>B</kbd></td></tr>
+          <tr><td>Open your pockets</td><td><kbd>Tab</kbd></td><td><kbd>Start</kbd>, then <b>Your pockets</b></td></tr>
+          <tr><td>Menu and settings</td><td><kbd>Esc</kbd></td><td><kbd>Start</kbd></td></tr>
+          <tr><td>Jump</td><td><kbd>Space</kbd></td><td><kbd>A</kbd></td></tr>
+          <tr><td>Sprint (uses stamina)</td><td><kbd>Shift</kbd></td><td><kbd>B</kbd></td></tr>
+          <tr><td>Skateboard on or off</td><td><kbd>Q</kbd></td><td><kbd>View</kbd></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <form id="kit" novalidate>
+  <div class="wrap">
+  <section class="sheet" aria-labelledby="play">
+    <header><span class="eyebrow">Step 2</span><h2 id="play">Play one day</h2></header>
+    <p>You start in Mr. Duck's apartment hall. Downtown is downhill and the college is up the greenway. Do whatever interests you, in any order. Nothing can go badly wrong and there's no deadline. Afterwards, tick everything you did. You don't need to do them all.</p>
+    <div class="ticks" id="did">
+      <label class="tick"><input type="checkbox" name="did" value="Talked to Eli at the college" id="did-eli">Talked to Eli at the college</label>
+      <label class="tick"><input type="checkbox" name="did" value="Learned a greeting" id="did-greeting">Learned a greeting</label>
+      <label class="tick"><input type="checkbox" name="did" value="Talked to Nora downtown" id="did-nora">Talked to Nora downtown</label>
+      <label class="tick"><input type="checkbox" name="did" value="Took Nora's seeds to Eli" id="did-seeds">Took Nora's seeds to Eli</label>
+      <label class="tick"><input type="checkbox" name="did" value="Told Nora how the planting went" id="did-report">Told Nora how the planting went</label>
+      <label class="tick"><input type="checkbox" name="did" value="Got a fan at the campus equipment desk" id="did-fan">Got a fan at the campus equipment desk</label>
+      <label class="tick"><input type="checkbox" name="did" value="Fixed the plaza vent, or asked the neighbors" id="did-vent">Fixed the plaza vent, or asked the neighbors</label>
+      <label class="tick"><input type="checkbox" name="did" value="Went inside a building" id="did-inside">Went inside a building</label>
+      <label class="tick"><input type="checkbox" name="did" value="Read a notice board" id="did-board">Read a notice board</label>
+      <label class="tick"><input type="checkbox" name="did" value="Talked to someone on the street" id="did-street">Talked to someone on the street</label>
+      <label class="tick"><input type="checkbox" name="did" value="Opened my pockets" id="did-pockets">Opened my pockets</label>
+      <label class="tick"><input type="checkbox" name="did" value="Ate the packed snack" id="did-snack">Ate the packed snack</label>
+      <label class="tick"><input type="checkbox" name="did" value="Rested on the rest bench" id="did-rest">Rested on the rest bench</label>
+      <label class="tick"><input type="checkbox" name="did" value="Started another day" id="did-newday">Started another day</label>
+      <label class="tick"><input type="checkbox" name="did" value="Rode the skateboard" id="did-board-ride">Rode the skateboard</label>
+      <label class="tick"><input type="checkbox" name="did" value="Took the bus" id="did-bus">Took the bus</label>
+    </div>
+  </section>
+
+  <section class="sheet" aria-labelledby="pad">
+    <header><span class="eyebrow">Step 3 · only if you used a controller</span><h2 id="pad">Controller checks</h2></header>
+    <p>For each line, pick <b>Worked</b>, <b>Trouble</b> or <b>Didn't try</b>. If you mark Trouble, say what happened in the box below.</p>
+    <div class="field"><label for="pad-model">Which controller?</label><input type="text" id="pad-model" name="padModel" placeholder="For example: Xbox Wireless, PlayStation DualSense, 8BitDo"></div>
+    <div id="pad-rows"></div>
+    <div class="field"><label for="pad-notes">What went wrong with the controller?</label><textarea id="pad-notes" name="padNotes" placeholder="Which check, what you pressed, what happened"></textarea></div>
+  </section>
+
+  <section class="sheet" aria-labelledby="questions">
+    <header><span class="eyebrow">Step 4</span><h2 id="questions">A few questions</h2></header>
+
+    <div class="q">
+      <span class="ask">When you picked something to do, did you know what it would take and what you'd get?</span>
+      <div class="choices" role="radiogroup" aria-label="Did you understand your choices">
+        <label class="pill"><input type="radio" name="choicesClear" value="Always" id="cc-always">Always</label>
+        <label class="pill"><input type="radio" name="choicesClear" value="Mostly" id="cc-mostly">Mostly</label>
+        <label class="pill"><input type="radio" name="choicesClear" value="Sometimes" id="cc-sometimes">Sometimes</label>
+        <label class="pill"><input type="radio" name="choicesClear" value="Rarely" id="cc-rarely">Rarely</label>
+      </div>
+      <textarea id="choices-example" name="choicesExample" aria-label="An example of a clear or unclear choice" placeholder="One choice that was clear, or one that wasn't"></textarea>
+    </div>
+
+    <div class="q">
+      <span class="ask">What was the first thing that felt useful or rewarding?</span>
+      <textarea id="early-gain" name="earlyGain" aria-label="First useful or rewarding moment" placeholder="For example: learning the greeting, getting the fan, a shortcut"></textarea>
+      <div class="field"><label for="early-minutes">About how many minutes in?</label><input type="number" id="early-minutes" name="earlyMinutes" min="0" max="180" inputmode="numeric"></div>
+    </div>
+
+    <div class="q">
+      <span class="ask">Did the time of day change while you played (morning to evening), or did you start another day?</span>
+      <div class="choices" role="radiogroup" aria-label="Did the time of day change">
+        <label class="pill"><input type="radio" name="dayPhase" value="Yes" id="dp-yes">Yes</label>
+        <label class="pill"><input type="radio" name="dayPhase" value="No" id="dp-no">No</label>
+        <label class="pill"><input type="radio" name="dayPhase" value="Not sure" id="dp-unsure">Not sure</label>
+      </div>
+      <textarea id="day-phase-notes" name="dayPhaseNotes" aria-label="What was different" placeholder="What looked or felt different? Did anything wait for a certain time?"></textarea>
+    </div>
+
+    <div class="q">
+      <span class="ask">Did you eat or rest?</span>
+      <div class="choices">
+        <label class="pill"><input type="checkbox" name="foodRest" value="Ate the snack" id="fr-ate">Ate the snack</label>
+        <label class="pill"><input type="checkbox" name="foodRest" value="Rested" id="fr-rest">Rested</label>
+        <label class="pill"><input type="checkbox" name="foodRest" value="Started another day" id="fr-day">Started another day</label>
+        <label class="pill"><input type="checkbox" name="foodRest" value="None of these" id="fr-none">None of these</label>
+      </div>
+      <textarea id="food-rest-why" name="foodRestWhy" aria-label="What made you decide" placeholder="What made you decide, or why didn't you?"></textarea>
+    </div>
+
+    <div class="q">
+      <span class="ask">Name one thing that changed, in the world or with a person, because of something you did.</span>
+      <textarea id="what-changed" name="whatChanged" aria-label="What changed because of you" placeholder="Where was it, and how could you tell?"></textarea>
+    </div>
+
+    <div class="q">
+      <span class="ask">How long did you play?</span>
+      <div class="row">
+        <div class="field"><label for="minutes-played">Minutes</label><input type="number" id="minutes-played" name="minutesPlayed" min="0" max="300" inputmode="numeric"></div>
+        <div class="field"><span id="pace-label" style="font-weight:700">That felt…</span>
+          <div class="choices" role="radiogroup" aria-labelledby="pace-label">
+            <label class="pill"><input type="radio" name="pace" value="Too short" id="pace-short">Too short</label>
+            <label class="pill"><input type="radio" name="pace" value="About right" id="pace-right">About right</label>
+            <label class="pill"><input type="radio" name="pace" value="Too long" id="pace-long">Too long</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="q">
+      <span class="ask">What confused you, or where did you get stuck?</span>
+      <textarea id="confusing" name="confusing" aria-label="What confused you"></textarea>
+    </div>
+    <div class="q">
+      <span class="ask">Did anything break or look wrong?</span>
+      <span class="why">Where were you, what were you doing, and what happened?</span>
+      <textarea id="bugs" name="bugs" aria-label="What broke or looked wrong"></textarea>
+    </div>
+    <div class="q">
+      <span class="ask">Your favorite moment</span>
+      <textarea id="favorite" name="favorite" aria-label="Favorite moment"></textarea>
+    </div>
+    <div class="q">
+      <span class="ask">Anything else?</span>
+      <textarea id="else" name="anythingElse" aria-label="Anything else"></textarea>
+    </div>
+  </section>
+
+  <section class="sheet" aria-labelledby="you">
+    <header><span class="eyebrow">Step 5</span><h2 id="you">About your setup, and send</h2></header>
+    <div class="row">
+      <div class="field"><label for="tester">Name or initials <span class="small">(optional)</span></label><input type="text" id="tester" name="tester" autocomplete="off"></div>
+      <div class="field"><label for="setup">Browser and computer</label><input type="text" id="setup" name="setup" placeholder="For example: Chrome on a Windows laptop"></div>
+    </div>
+    <div class="field"><span id="input-label" style="font-weight:700">Played with</span>
+      <div class="choices" role="radiogroup" aria-labelledby="input-label">
+        <label class="pill"><input type="radio" name="input" value="Keyboard and mouse" id="in-kb">Keyboard and mouse</label>
+        <label class="pill"><input type="radio" name="input" value="Controller" id="in-pad">Controller</label>
+        <label class="pill"><input type="radio" name="input" value="Both" id="in-both">Both</label>
+      </div>
+    </div>
+    <div class="save-bar">
+      <button type="submit" class="primary" id="save">Copy my answers</button>
+      <button type="button" id="copy">Download as a text file</button>
+      <a href="https://github.com/dustooned/MDGTCdev/issues/new?template=bug-report.yml" target="_blank" rel="noopener">Open the GitHub feedback form ↗</a>
+      <span class="status" id="status" role="status" aria-live="polite">Your answers stay as a draft in this browser while you type. Nothing is sent anywhere.</span>
+    </div>
+    <p class="small">To send them: copy your answers and paste them into the GitHub feedback form (it needs a free GitHub account), or send them to the person who gave you this page.</p>
+    <div class="field" id="copy-fallback" hidden>
+      <label for="copy-text">Your answers as text. Select them, copy, and paste them into the feedback form or a message.</label>
+      <textarea id="copy-text" class="copybox" readonly></textarea>
+    </div>
+  </section>
+  </div>
+  </form>
+</div>
+
+<script>
+const BUILD = "2026-10-24-web-12";
+const DRAFT_KEY = "mrduck-playtest-draft-" + BUILD;
+const PAD_CHECKS = [
+  ["noticed", "The game noticed the controller: the left stick walks Mr. Duck"],
+  ["look", "The right stick turns the camera"],
+  ["talk", "X starts a conversation, reads a board or goes through a door"],
+  ["thoughts", "While talking, the left stick picks a thought and A chooses it"],
+  ["yesno", "On a choice card, A says yes and B says not now"],
+  ["back", "B backs out of a card and speeds up talking"],
+  ["menu", "Start opens the menu, and Your pockets opens from it"],
+  ["skate", "View puts the skateboard on and takes it off"],
+  ["recenter", "RB puts the camera back behind Mr. Duck"],
+  ["unstuck", "I could always get back to walking around"],
+];
+const form = document.getElementById("kit");
+const statusEl = document.getElementById("status");
+let db = null, myId = null, saving = false;
+
+// Controller rows are generated so their names and ids stay in step with PAD_CHECKS.
+const padRows = document.getElementById("pad-rows");
+for (const [key, text] of PAD_CHECKS) {
+  const row = document.createElement("div");
+  row.className = "check-row";
+  const label = document.createElement("span");
+  label.id = "pad-" + key + "-label";
+  label.textContent = text;
+  const seg = document.createElement("div");
+  seg.className = "seg";
+  seg.setAttribute("role", "radiogroup");
+  seg.setAttribute("aria-labelledby", label.id);
+  for (const [value, word] of [["worked", "Worked"], ["trouble", "Trouble"], ["skipped", "Didn't try"]]) {
+    const opt = document.createElement("label");
+    const input = document.createElement("input");
+    input.type = "radio"; input.name = "pad-" + key; input.value = value; input.id = "pad-" + key + "-" + value;
+    opt.append(input, word);
+    seg.append(opt);
+  }
+  row.append(label, seg);
+  padRows.append(row);
+}
+
+function readForm() {
+  const f = new FormData(form);
+  const pad = {};
+  for (const [key] of PAD_CHECKS) pad[key] = f.get("pad-" + key) || "";
+  return {
+    build: BUILD,
+    tester: (f.get("tester") || "").trim(),
+    setup: (f.get("setup") || "").trim(),
+    input: f.get("input") || "",
+    did: f.getAll("did"),
+    padModel: (f.get("padModel") || "").trim(),
+    pad,
+    padNotes: f.get("padNotes") || "",
+    choicesClear: f.get("choicesClear") || "",
+    choicesExample: f.get("choicesExample") || "",
+    earlyGain: f.get("earlyGain") || "",
+    earlyMinutes: f.get("earlyMinutes") || "",
+    dayPhase: f.get("dayPhase") || "",
+    dayPhaseNotes: f.get("dayPhaseNotes") || "",
+    foodRest: f.getAll("foodRest"),
+    foodRestWhy: f.get("foodRestWhy") || "",
+    whatChanged: f.get("whatChanged") || "",
+    minutesPlayed: f.get("minutesPlayed") || "",
+    pace: f.get("pace") || "",
+    confusing: f.get("confusing") || "",
+    bugs: f.get("bugs") || "",
+    favorite: f.get("favorite") || "",
+    anythingElse: f.get("anythingElse") || "",
+  };
+}
+
+function fillForm(r) {
+  if (!r) return;
+  const set = (name, value) => { const el = form.elements[name]; if (el && "value" in el && !(el instanceof RadioNodeList)) el.value = value ?? ""; };
+  const pick = (name, value) => { for (const el of form.querySelectorAll(`input[name="${name}"]`)) el.checked = el.value === value; };
+  const many = (name, values) => { for (const el of form.querySelectorAll(`input[name="${name}"]`)) el.checked = (values || []).includes(el.value); };
+  for (const name of ["tester", "setup", "padModel", "padNotes", "choicesExample", "earlyGain", "earlyMinutes", "dayPhaseNotes", "foodRestWhy", "whatChanged", "minutesPlayed", "confusing", "bugs", "favorite", "anythingElse"]) set(name, r[name]);
+  for (const name of ["input", "choicesClear", "dayPhase", "pace"]) pick(name, r[name]);
+  many("did", r.did); many("foodRest", r.foodRest);
+  for (const [key] of PAD_CHECKS) pick("pad-" + key, r.pad?.[key] || "");
+}
+
+function asText(r) {
+  const lines = [];
+  const add = (label, value) => { const v = Array.isArray(value) ? value.join(", ") : String(value ?? "").trim(); lines.push(label + ": " + (v || "-")); };
+  lines.push("Mr. Duck playtest, build " + (r.build || BUILD));
+  if (r.updatedAt) lines.push("Saved " + new Date(r.updatedAt).toLocaleString());
+  add("Tester", r.tester); add("Browser and computer", r.setup); add("Played with", r.input);
+  add("Minutes played", r.minutesPlayed); add("Pace", r.pace);
+  add("Did", r.did);
+  add("Choices clear", r.choicesClear); add("Choice example", r.choicesExample);
+  add("First useful moment", r.earlyGain); add("Minutes in", r.earlyMinutes);
+  add("Time of day changed", r.dayPhase); add("What was different", r.dayPhaseNotes);
+  add("Food and rest", r.foodRest); add("Why", r.foodRestWhy);
+  add("What changed because of me", r.whatChanged);
+  add("Confusing or stuck", r.confusing); add("Broke or looked wrong", r.bugs);
+  add("Favorite moment", r.favorite); add("Anything else", r.anythingElse);
+  if (r.padModel || Object.values(r.pad || {}).some(Boolean) || r.padNotes) {
+    add("Controller", r.padModel);
+    for (const [key, text] of PAD_CHECKS) add("  " + text, { worked: "Worked", trouble: "Trouble", skipped: "Didn't try" }[r.pad?.[key]] || "");
+    add("Controller notes", r.padNotes);
+  }
+  return lines.join("\n");
+}
+
+function setStatus(text, kind) { statusEl.textContent = text; statusEl.className = "status" + (kind ? " " + kind : ""); }
+
+// Draft: a per-browser convenience only; the saved answers live in the shared store.
+let draftTimer = 0;
+form.addEventListener("input", () => {
+  clearTimeout(draftTimer);
+  draftTimer = setTimeout(() => { try { localStorage.setItem(DRAFT_KEY, JSON.stringify(readForm())); } catch {} }, 400);
+});
+try { const d = localStorage.getItem(DRAFT_KEY); if (d) fillForm(JSON.parse(d)); } catch {}
+
+function showFallback(reason) {
+  const box = document.getElementById("copy-fallback");
+  document.getElementById("copy-text").value = asText(readForm());
+  box.hidden = false;
+  setStatus(reason, "warn");
+}
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const text = asText(readForm());
+  try { await navigator.clipboard.writeText(text); setStatus("Copied. Paste your answers into the feedback form or a message.", "ok"); }
+  catch { showFallback("Couldn't reach the clipboard. Your answers are in the box below; select and copy them."); }
+});
+document.getElementById("copy").addEventListener("click", () => {
+  const blob = new Blob([asText(readForm())], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "mr-duck-playtest-" + new Date().toISOString().slice(0, 10) + ".txt";
+  document.body.append(link); link.click(); link.remove();
+  setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+  setStatus("Downloaded your answers as a text file.", "ok");
+});
+</script>
+
+</body>
+</html>
