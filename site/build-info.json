@@ -1,4 +1,4 @@
-﻿{
+{
     "release":  "2026-10-25-web-16",
     "builtAt":  "2026-10-25T20:32:41.526253+00:00",
     "baseSource":  "development/city-day (current working copy)",
@@ -52,5 +52,9 @@
                       "sha256":  "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
                   }
               ],
-    "automatedAssertionsNote":  "not re-counted for web-16; adds 32 director and 18 interior-cinematic assertions"
+    "automatedAssertionsNote":  "not re-counted for web-16; adds 32 director and 18 interior-cinematic assertions",
+    "knownIssues":  [
+                        "The downtown skateshop, shop windows and HELP WANTED signs are in progress and not finished in this build.",
+                        "Eleven interior window and storefront checks currently fail; they cover this unfinished work, not the cinematic."
+                    ]
 }
