@@ -6,7 +6,7 @@ body:
     id: version
     attributes:
       label: Demo version
-      value: 2026-10-25-web-21
+      value: 2026-10-25-web-22
   - type: input
     id: setup
     attributes:
