@@ -1,5 +1,5 @@
 Mr. Duck Goes to College — beta playtest
-Demo version: 2026-10-25-web-22
+Demo version: 2026-10-25-web-23
 Browser and device:
 Keyboard or controller:
 
