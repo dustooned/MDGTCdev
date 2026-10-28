@@ -1,10 +1,17 @@
 {
-  "release": "2026-10-26-web-24",
-  "builtAt": "2026-10-27T05:25:25.348237+00:00",
-  "baseSource": "development/city-day (game source commit 139967e)",
+  "release": "2026-10-28-web-25",
+  "builtAt": "2026-10-28T15:56:16.084482+00:00",
+  "baseSource": "development/city-day (game source commit a144ab0)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
+    "Cutscenes can be written as screenplay-style text scenes; the opening call and the trash scene now use them",
+    "Mom's voice: cutscene lines babble as they type, and Mom nags down an old phone line (high and quick, every other line climbing, through a narrow crushed filter)",
+    "Mr. Duck's phone (placeholder): he can't leave his room until he picks it up; M or the PHONE button opens it to Mom's angry texts",
+    "Mr. Duck's inner thoughts replace parenthetical asides in dialogue (Rosa), and soften as he is looked after",
+    "Room 2 plays its own song instead of the house theme; doors switch the music at once and the old song no longer swells back up in the hall",
+    "When the roommate hauls the trash away, the burning flower goes dark as soon as the trash starts to sink",
+    "Footsteps sound indoor in every room",
     "Keyboard focus stays on the game after taps, app switches and stray keys (iPad Safari)",
     "Pause menu: Check keyboard / controller screen shows connected pads and each key or button with its game actions",
     "Web: CSS-resolution rendering and 2048 shadow maps to save memory; crash notes offered for bug reports after an unexpected reload",
@@ -34,46 +41,46 @@
     "A halftone shadow shader now exists for hand-painted surfaces: cast shadow becomes a rotated dot screen instead of a smooth gradient. Not applied to any scene yet"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 1928,
+  "automatedAssertionsPassed": 2086,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-26-web-24/index.audio.position.worklet.js",
+      "path": "builds/2026-10-28-web-25/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-26-web-24/index.audio.worklet.js",
+      "path": "builds/2026-10-28-web-25/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-26-web-24/index.html",
+      "path": "builds/2026-10-28-web-25/index.html",
       "bytes": 11093,
-      "sha256": "cc2847a234f286d6bfbf304c6427c2e5fa9e27d5e4cc13015e1ec2cf80d860e0"
+      "sha256": "fafc74f01dec8d75c15a01e6bc0f9da5659f1414546303ea63a9c5260ae05a7b"
     },
     {
-      "path": "builds/2026-10-26-web-24/index.js",
+      "path": "builds/2026-10-28-web-25/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-26-web-24/index.pck",
-      "bytes": 24756448,
-      "sha256": "443fffb6be9d7d4f2a5969c6c30ee7d274a855168063167948daa9d93c96af11"
+      "path": "builds/2026-10-28-web-25/index.pck",
+      "bytes": 25107088,
+      "sha256": "2750b2709198cd286084b48cb2118b565e28e01e5dbc9467cd97e94210199e61"
     },
     {
-      "path": "builds/2026-10-26-web-24/index.png",
+      "path": "builds/2026-10-28-web-25/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-26-web-24/index.wasm",
+      "path": "builds/2026-10-28-web-25/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
   ],
-  "automatedAssertionsNote": "City Day verify: 1656 assertions across 18 suites, 500 prior source files unchanged."
+  "automatedAssertionsNote": "City Day verify: 2086 assertions across 26 suites, 498 prior source files unchanged."
 }
