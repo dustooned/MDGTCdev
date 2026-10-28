@@ -1,6 +1,6 @@
 {
   "preview": "2026-10-28-web-26-ink-preview",
-  "kind": "preview, not the main release (web-25 stays the Play link)",
+  "kind": "preview path; the same files became the main release 2026-10-28-web-26",
   "builtAt": "2026-10-28T16:47:43.760029+00:00",
   "baseSource": "development/city-day (game source commit 13fafd7)",
   "engine": "Godot 4.4.1",
