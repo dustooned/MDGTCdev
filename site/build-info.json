@@ -1,65 +1,64 @@
 {
-  "release": "2026-10-29-web-28",
-  "builtAt": "2026-10-30T03:24:13.680026+00:00",
-  "baseSource": "development/city-day (game source commit fe65ad4d1f00c06948cc74b096239567042526a4)",
+  "release": "2026-10-30-web-29",
+  "builtAt": "2026-10-30T16:14:16.877422+00:00",
+  "baseSource": "development/city-day (game source commit dd230728930b13f140e3bed145fd6a410af1697c)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
-    "Actual sleep duration and wake-up previews, bounded sleep debt, naps and a safe end of the night",
-    "Coffee and energy drinks with saved useful windows, forecasted rebounds and real pocket use; later sleep shortcuts carry repayment costs",
-    "Mr. Duck gives short inner thoughts as tiredness changes, with original low bubbling sounds and temporary tired eye/blink states",
-    "One accelerated Fall calendar with midnight rollover; active world time advances while standing, and reading or conversations pause it",
-    "Distinct NPC work, home and sleep schedules, public counter hours and a Friday 22:00 terrace sketch circle that remembers attendance",
-    "Expanded neighborhood: three house shells, seven additional rooms and staffed service interiors; seasonal foliage and visible municipal neglect",
-    "Two hillside rivals, including Marlow, who calls Duck son while the parentage remains unresolved",
-    "Continuous conversation camera through topics/actions/replies, shorter speech and ordered inner thoughts, quieter notifications and deliberate object focus",
-    "Flip-phone inbox and individual message reading, preserved selection and right-stick-click access",
-    "Passive thoughts clear when opening pause so they cannot cover menu choices",
-    "Final sleep face art and human balance/controller/tablet review remain pending"
+    "Shared comic UI kit: editable SVG paper/ink frames, caption tabs, focus marks, palette/type/layout tokens and an artist component workshop",
+    "Pockets keep item nodes, focus and scroll while the facing action page updates; six slots, seven item icons, pinned Close and stacked narrow layouts",
+    "Item use preserves cost/outcome previews, instance identity, reserved seed recipients and home storage rules; Back returns from actions to the selected item",
+    "Story dialogue waits for the player, long lines stay in paged held shots, and separate reveal/advance presses replace forced timeouts",
+    "Screenplay reading pauses future cues while authored camera motion and voice timing continue; completed thought beats restore the current conversation page",
+    "Pause opens a compact notebook; detailed controls/settings have their own page, and ambient thoughts cannot cover pockets",
+    "Includes web-28 Fall calendar, neighborhood, sleep/debt/drink cycles and NPC/event schedules",
+    "The opening controls grid reflows on narrow browser windows instead of forcing the title card off screen",
+    "Initial story notes wrap within the browser; compact item inspection scrolls its description into view even when the use action is unavailable",
+    "Human balance, physical controller/tablet, independent listening and final tired-face artwork remain open"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 2585,
+  "automatedAssertionsPassed": 2642,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-29-web-28/index.audio.position.worklet.js",
+      "path": "builds/2026-10-30-web-29/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-29-web-28/index.audio.worklet.js",
+      "path": "builds/2026-10-30-web-29/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-29-web-28/index.html",
+      "path": "builds/2026-10-30-web-29/index.html",
       "bytes": 11093,
-      "sha256": "9bc00f122ef9ecc050899e96798ade4925c41b21c59891ec766fd456e647c30c"
+      "sha256": "5a307bc2f453381a8b44a91de8dd6374ef703f27915818ac47bc41a878eb045b"
     },
     {
-      "path": "builds/2026-10-29-web-28/index.js",
+      "path": "builds/2026-10-30-web-29/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-29-web-28/index.pck",
-      "bytes": 25188464,
-      "sha256": "88f57e64d7014875e5b45d48b533f8f09bd6cbb1240c2e0cd0a8c2daab675a5e"
+      "path": "builds/2026-10-30-web-29/index.pck",
+      "bytes": 25223408,
+      "sha256": "fc026d569dc14c1503f19542d7a592c952d5933eb37648edfd1320cbfe0da619"
     },
     {
-      "path": "builds/2026-10-29-web-28/index.png",
+      "path": "builds/2026-10-30-web-29/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-29-web-28/index.wasm",
+      "path": "builds/2026-10-30-web-29/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
   ],
-  "automatedAssertionsNote": "City Day verify: 2585 assertions across 30 suites; 494 protected inherited files unchanged. Desktop browser smoke check is separate from physical controller or human balance testing.",
-  "sourceCommit": "fe65ad4d1f00c06948cc74b096239567042526a4",
-  "runtimeCommit": "fe65ad4d1f00c06948cc74b096239567042526a4"
+  "automatedAssertionsNote": "City Day verify: 2642 assertions across 31 suites; 491 protected inherited files unchanged. Native GPU screens reviewed; physical controller/tablet and human timing/balance review remain open.",
+  "sourceCommit": "dd230728930b13f140e3bed145fd6a410af1697c",
+  "runtimeCommit": "dd230728930b13f140e3bed145fd6a410af1697c"
 }
