@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-30-web-30**, short intentions and contextual replies. Conversation choices use brief phrases and twelve semantic symbols; NPCs respond to the selected topic and actual favor progress. Shopkeepers finish speaking before the purchase screen opens. 2,715 assertions pass across 32 suites.
+Current release: **2026-10-30-web-31**, the complete outdoor seed outing. Physical seeds/planter progress, short landmark direction questions, a post-conversation object reveal and quiet thoughts/notifications. 2,773 assertions across 33 suites pass, including the real on-foot outing and next-day return.
+
+Previous release: **2026-10-30-web-30**, short intentions and contextual replies. Conversation choices use brief phrases and twelve semantic symbols; NPCs respond to the selected topic and actual favor progress. Shopkeepers finish speaking before the purchase screen opens. 2,715 assertions pass across 32 suites.
 
 Previous release: **2026-10-30-web-29**, the comic UI pass. Pockets have stable item selection, a facing action panel and pinned Close; story lines wait for separate reveal/advance presses. Pause is a compact notebook, and shared vector frames/type/tokens form an editable artist kit. 2,642 automated assertions pass across 31 suites. Human controller, listening, pacing and final art review remain open.
 

@@ -1,62 +1,61 @@
 {
-  "release": "2026-10-30-web-30",
-  "builtAt": "2026-10-30T16:48:13.100892+00:00",
-  "baseSource": "development/city-day (game source commit 84b59a53b91fce56fce2dff1210945ad6b395cea)",
+  "release": "2026-10-30-web-31",
+  "builtAt": "2026-10-30T18:42:50.434555+00:00",
+  "baseSource": "development/city-day (game source commit ea942422a03bb938903a5e9711c30f90b9a5ee97)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
-    "Concise player intentions such as Hola?, Your seeds, Notices?, Receipt and Bye, with twelve editable semantic symbols and full validated details/costs in the preview",
-    "Eli and Nora react to the actual greeting, offer, delivery, report, returned pin and notice actions instead of replaying their introduction",
-    "Neighbors answer the chosen topic; optional activity, advice and public hours use their actual current context, with closing-time and event replies",
-    "Spanish and greeting gates remain intact; Marlow dodges the father question without confirming parentage",
-    "Shopkeepers finish their drink-specific or tiredness-aware reply before the player acknowledges it and opens the purchase preview; the read reply holds through the camera handoff",
-    "Player choice text cannot appear as NPC speech; flavor branches invent no quests, costs, rewards or save flags",
-    "Editable writer registry and choice-symbol gallery extend the shared comic UI workshop",
-    "Includes web-29 comic UI and inventory plus the Fall world, sleep and NPC schedules; human writing/controller/listening review remains open"
+    "Complete Eli–Nora seed outing with visible saved packet, empty-to-planted campus planter, physical wayfinding signs and optional landmark direction questions",
+    "A brief planter outcome camera waits until the conversation finishes; cancel restores travel and reduced motion gives the thought without taking the camera",
+    "Stage directions belong to Duck’s held inner thoughts; notifications, passive observations and tiredness remarks take separate presentation beats",
+    "Forty-two dedicated outing checks include a real on-foot route, free reading, stable conversation camera, late acceptance, preserved planting news through sleep and next-opening return",
+    "Includes the source choice-art infrastructure: twelve replaceable symbols, four independent balloon states, a lock marker and artist workshop",
+    "Original seed transactions, rewards, desk hours, sleep rules and save formats stay authoritative; existing saves load normally",
+    "Includes prior comic UI, inventory, Fall calendar, scheduled residents and sleep systems; final prop art, human feel, physical controller and independent listening review remain open"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 2715,
+  "automatedAssertionsPassed": 2773,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-30-web-30/index.audio.position.worklet.js",
+      "path": "builds/2026-10-30-web-31/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-30-web-30/index.audio.worklet.js",
+      "path": "builds/2026-10-30-web-31/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-30-web-30/index.html",
+      "path": "builds/2026-10-30-web-31/index.html",
       "bytes": 11093,
-      "sha256": "f1697236d25657082c0bb8b8648c566d3d780137456132733a1e784d6ba6b9e0"
+      "sha256": "76173fdee4ed2e7811404dfd0fc6944afb793c44bd67ced79c6e9d4822a4cb21"
     },
     {
-      "path": "builds/2026-10-30-web-30/index.js",
+      "path": "builds/2026-10-30-web-31/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-30-web-30/index.pck",
-      "bytes": 25248912,
-      "sha256": "57a7de31692e9bd2b440d6b7708b594de714f7c3c90062a550992c5cb0d58ebc"
+      "path": "builds/2026-10-30-web-31/index.pck",
+      "bytes": 25269760,
+      "sha256": "8a7726ed0adf166bb3f2f2da62e85f40132a4a931f0ce0d31397850a8e1e9ba3"
     },
     {
-      "path": "builds/2026-10-30-web-30/index.png",
+      "path": "builds/2026-10-30-web-31/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-30-web-30/index.wasm",
+      "path": "builds/2026-10-30-web-31/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
   ],
-  "automatedAssertionsNote": "City Day verify: 2715 assertions across 32 suites; 490 protected inherited files unchanged. Eight native GPU conversation screens reviewed; physical controller and human writing/listening review remain open.",
-  "sourceCommit": "84b59a53b91fce56fce2dff1210945ad6b395cea",
-  "runtimeCommit": "84b59a53b91fce56fce2dff1210945ad6b395cea"
+  "automatedAssertionsNote": "City Day verify: 2773 assertions across 33 suites; 490 protected inherited files unchanged. Real-controller on-foot route and native GPU outing screens checked; human/device/listening review remains open.",
+  "sourceCommit": "ea942422a03bb938903a5e9711c30f90b9a5ee97",
+  "runtimeCommit": "ea942422a03bb938903a5e9711c30f90b9a5ee97"
 }
