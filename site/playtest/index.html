@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Tester checklist, controls, controller checks and questions for the Mr. Duck Goes to College web-27 playtest.">
+<meta name="description" content="Tester checklist, controls, controller checks and questions for the Mr. Duck Goes to College web-28 playtest.">
 <title>Mr. Duck Playtest</title>
 <style>
 @font-face { font-family: "Atkinson Hyperlegible"; src: url("fonts/Atkinson-Regular.ttf") format("truetype"); font-display: swap; }
@@ -114,7 +114,7 @@ details summary { cursor: pointer; color: var(--teal); font-weight: 700; }
 
 <div class="wrap">
   <section class="sheet hero" aria-labelledby="title">
-    <span class="eyebrow">Playtest · build 2026-10-28-web-27</span>
+    <span class="eyebrow">Playtest · build 2026-10-29-web-28</span>
     <h1 id="title">Mr. Duck Playtest</h1>
     <p>Thanks for playing! It takes about 30 to 40 minutes: play one day in <em>Mr. Duck Goes to College</em>, then answer a few questions. There are no wrong answers. If something confused you, that is exactly what we want to hear.</p>
     <div class="tags">
@@ -122,7 +122,7 @@ details summary { cursor: pointer; color: var(--teal); font-weight: 700; }
       <span class="tag"><b>About 10 min</b> questions</span>
       <span class="tag">Keyboard or controller</span>
     </div>
-    <a class="cta" id="play-link" href="../builds/2026-10-28-web-27/" target="_blank" rel="noopener">Open the game ↗</a>
+    <a class="cta" id="play-link" href="../builds/2026-10-29-web-28/" target="_blank" rel="noopener">Open the game ↗</a>
     <p class="small"><a href="../">Back to the beta page</a></p>
   </section>
 
@@ -161,7 +161,7 @@ details summary { cursor: pointer; color: var(--teal); font-weight: 700; }
   <div class="wrap">
   <section class="sheet" aria-labelledby="play">
     <header><span class="eyebrow">Step 2</span><h2 id="play">Play one day</h2></header>
-    <p>You start in Mr. Duck's apartment hall. Downtown is downhill and the college is up the greenway. Do whatever interests you, in any order. Nothing can go badly wrong and there's no deadline. Afterwards, tick everything you did. You don't need to do them all.</p>
+    <p>New games begin in Mr. Duck’s room with a phone call. Downtown is downhill and college is up the greenway. Explore at your own pace: favors can wait, people keep hours, and Duck needs sleep. Reading pauses the clock. Tick what you tried; you do not need to do everything.</p>
     <div class="ticks" id="did">
       <label class="tick"><input type="checkbox" name="did" value="Talked to Eli at the college" id="did-eli">Talked to Eli at the college</label>
       <label class="tick"><input type="checkbox" name="did" value="Learned a greeting" id="did-greeting">Learned a greeting</label>
@@ -179,6 +179,11 @@ details summary { cursor: pointer; color: var(--teal); font-weight: 700; }
       <label class="tick"><input type="checkbox" name="did" value="Started another day" id="did-newday">Started another day</label>
       <label class="tick"><input type="checkbox" name="did" value="Rode the skateboard" id="did-board-ride">Rode the skateboard</label>
       <label class="tick"><input type="checkbox" name="did" value="Took the bus" id="did-bus">Took the bus</label>
+      <label class="tick"><input type="checkbox" name="did" value="Read an individual phone message" id="did-phone">Read an individual phone message</label>
+      <label class="tick"><input type="checkbox" name="did" value="Chose actual sleep hours and checked the wake-up preview" id="did-sleep">Chose actual sleep hours and checked the wake-up preview</label>
+      <label class="tick"><input type="checkbox" name="did" value="Tried a drink and noticed its later rebound" id="did-energy">Tried a drink and noticed its later rebound</label>
+      <label class="tick"><input type="checkbox" name="did" value="Found someone at work, home or asleep" id="did-hours">Found someone at work, home or asleep</label>
+      <label class="tick"><input type="checkbox" name="did" value="Met Bea and Tavi at the Friday night sketch circle" id="did-night">Met Bea and Tavi at the Friday night sketch circle</label>
     </div>
   </section>
 
@@ -228,7 +233,7 @@ details summary { cursor: pointer; color: var(--teal); font-weight: 700; }
         <label class="pill"><input type="checkbox" name="foodRest" value="Started another day" id="fr-day">Started another day</label>
         <label class="pill"><input type="checkbox" name="foodRest" value="None of these" id="fr-none">None of these</label>
       </div>
-      <textarea id="food-rest-why" name="foodRestWhy" aria-label="What made you decide" placeholder="What made you decide, or why didn't you?"></textarea>
+      <textarea id="food-rest-why" name="foodRestWhy" aria-label="What made you decide" placeholder="Could you tell how tired Duck was? Was the sleep or drink tradeoff clear?"></textarea>
     </div>
 
     <div class="q">
@@ -299,7 +304,7 @@ details summary { cursor: pointer; color: var(--teal); font-weight: 700; }
 </div>
 
 <script>
-const BUILD = "2026-10-28-web-27";
+const BUILD = "2026-10-29-web-28";
 const DRAFT_KEY = "mrduck-playtest-draft-" + BUILD;
 const PAD_CHECKS = [
   ["noticed", "The game noticed the controller: the left stick walks Mr. Duck"],

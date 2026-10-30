@@ -1,90 +1,65 @@
 {
-  "release": "2026-10-28-web-27",
-  "builtAt": "2026-10-28T20:11:43.550333+00:00",
-  "baseSource": "development/city-day (game source commit 7929c1c)",
+  "release": "2026-10-29-web-28",
+  "builtAt": "2026-10-30T03:24:13.680026+00:00",
+  "baseSource": "development/city-day (game source commit fe65ad4d1f00c06948cc74b096239567042526a4)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
-    "Sound works again in the browser: web-25 and web-26 were silent because the old-phone voice filter made audio buses at runtime; on the web Mom's voice now plays unfiltered",
-    "Illustrated Ink look across the whole game: clean ink contours, a warm two-tone shade and fine hatching on shaded sides",
-    "Halftone dots stay in cast shadows inside the new look",
-    "F10 (or ?ink=0 in the address) switches back to the web-25 look for comparison",
-    "Cutscenes can be written as screenplay-style text scenes; the opening call and the trash scene now use them",
-    "Mom's voice: cutscene lines babble as they type, and Mom nags down an old phone line (high and quick, every other line climbing, through a narrow crushed filter)",
-    "Mr. Duck's phone (placeholder): he can't leave his room until he picks it up; M or the PHONE button opens it to Mom's angry texts",
-    "Mr. Duck's inner thoughts replace parenthetical asides in dialogue (Rosa), and soften as he is looked after",
-    "Room 2 plays its own song instead of the house theme; doors switch the music at once and the old song no longer swells back up in the hall",
-    "When the roommate hauls the trash away, the burning flower goes dark as soon as the trash starts to sink",
-    "Footsteps sound indoor in every room",
-    "Keyboard focus stays on the game after taps, app switches and stray keys (iPad Safari)",
-    "Pause menu: Check keyboard / controller screen shows connected pads and each key or button with its game actions",
-    "Web: CSS-resolution rendering and 2048 shadow maps to save memory; crash notes offered for bug reports after an unexpected reload",
-    "Music: equal-power crossfades; cutscenes, doors and talk duck instead of cutting; pause fades out; rooms keep the street's music; dungeons duck under the drone",
-    "Gentler halftone: floors carry a finer, lighter dot screen over a soft shadow; walls get a faint touch (12%)",
-    "Dots fade with the brightness of the blocked light, so the near-off dungeon sun and dim lamps no longer fill floors with dots",
-    "New opening for new games: Mr. Duck's room, his mother's phone call, trash with an ever-burning flower on the stairs, the board locked until the roommate's gift",
-    "Room 2 reworked as the kettle dungeon: water two beds and two ceiling vines, the last drop on the roommate's hair, the board gift, the roommate hauls the trash away",
-    "Mr. Duck never speaks: placeholder inner thoughts in a dark thought cloud; dramatic speech bubbles, with a retro phone screen and shockwave tail for phone calls",
-    "Cue-sheet cutscene player with a Blender camera exporter; eased placeholder motion (poses, falling drops, growing plants, breathing, flicker)",
-    "Quiet travel HUD: no mission panel or distances, the illustrated clock, a short goal note on change; Mr. Duck's room can be revisited with decorating hints",
-    "Story progress is kept beside the day save; existing saves skip the opening and keep their board",
-    "Ancient dungeon staging for the Forge and Room 2: dark fog, flickering braziers, tall stone walls, columns, a glyph band and watching stone faces",
-    "First-visit arrival shot under the watching face with a title card (THE FORGE / Hall of Controlled Motion, ROOM 2 / The Overgrown Mind)",
-    "Gate moments: the camera cuts to a sealed gate as it rumbles and sinks, then hands control back",
-    "Mythic rewrite of the dungeon text; five original synthesized dungeon sounds (two room drones, title boom, gate rumble, solve chime)",
-    "Universal halftone: 1662 world surfaces draw cast shadows as a dot screen, outdoors and in every room",
-    "Dot size follows view distance in cross-faded octaves around the gameplay camera distance, so far shadows stay fine",
-    "Characters, glass, glowing screens and double-sided surfaces keep their own materials; unshadowed street lamps stay smooth",
-    "Every room uses no-falloff lamps; only the room you are in casts lamp shadows",
-    "Forge ENGR 101 dungeon slice: registration desk, initiation prediction at the demo lane, and a ride-and-brake stopping bay with a run board",
-    "Room 2, the roommate's garden: talk to the flowers, plant and mist three beds, the hedge gives way, press the AC, receive the board",
-    "Dungeon progress lasts for the visit and is not saved yet",
-    "Pixel Parlor halftone shadows: the room lamp casts shadows and the floor draws them as a round dot screen",
-    "The Pixel Parlor first look eases its letterbox in and out instead of snapping",
-    "The shot also dollies the camera in a little and returns it exactly where it was",
-    "A halftone shadow shader now exists for hand-painted surfaces: cast shadow becomes a rotated dot screen instead of a smooth gradient. Not applied to any scene yet"
+    "Actual sleep duration and wake-up previews, bounded sleep debt, naps and a safe end of the night",
+    "Coffee and energy drinks with saved useful windows, forecasted rebounds and real pocket use; later sleep shortcuts carry repayment costs",
+    "Mr. Duck gives short inner thoughts as tiredness changes, with original low bubbling sounds and temporary tired eye/blink states",
+    "One accelerated Fall calendar with midnight rollover; active world time advances while standing, and reading or conversations pause it",
+    "Distinct NPC work, home and sleep schedules, public counter hours and a Friday 22:00 terrace sketch circle that remembers attendance",
+    "Expanded neighborhood: three house shells, seven additional rooms and staffed service interiors; seasonal foliage and visible municipal neglect",
+    "Two hillside rivals, including Marlow, who calls Duck son while the parentage remains unresolved",
+    "Continuous conversation camera through topics/actions/replies, shorter speech and ordered inner thoughts, quieter notifications and deliberate object focus",
+    "Flip-phone inbox and individual message reading, preserved selection and right-stick-click access",
+    "Passive thoughts clear when opening pause so they cannot cover menu choices",
+    "Final sleep face art and human balance/controller/tablet review remain pending"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 2146,
+  "automatedAssertionsPassed": 2585,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-28-web-27/index.audio.position.worklet.js",
+      "path": "builds/2026-10-29-web-28/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-28-web-27/index.audio.worklet.js",
+      "path": "builds/2026-10-29-web-28/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-28-web-27/index.html",
+      "path": "builds/2026-10-29-web-28/index.html",
       "bytes": 11093,
-      "sha256": "aee0242f295802282d6bd3efb2d15dc1519e2098cbd42ba5993762fae55a7a6e"
+      "sha256": "9bc00f122ef9ecc050899e96798ade4925c41b21c59891ec766fd456e647c30c"
     },
     {
-      "path": "builds/2026-10-28-web-27/index.js",
+      "path": "builds/2026-10-29-web-28/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-28-web-27/index.pck",
-      "bytes": 25141648,
-      "sha256": "a9c1e19ff1954d412270e5ed13e7c5ba60820aec6490d4657ca24f081ac68a36"
+      "path": "builds/2026-10-29-web-28/index.pck",
+      "bytes": 25188464,
+      "sha256": "88f57e64d7014875e5b45d48b533f8f09bd6cbb1240c2e0cd0a8c2daab675a5e"
     },
     {
-      "path": "builds/2026-10-28-web-27/index.png",
+      "path": "builds/2026-10-29-web-28/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-28-web-27/index.wasm",
+      "path": "builds/2026-10-29-web-28/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
   ],
-  "automatedAssertionsNote": "City Day verify: 2146 assertions across 27 suites, 498 prior source files unchanged."
+  "automatedAssertionsNote": "City Day verify: 2585 assertions across 30 suites; 494 protected inherited files unchanged. Desktop browser smoke check is separate from physical controller or human balance testing.",
+  "sourceCommit": "fe65ad4d1f00c06948cc74b096239567042526a4",
+  "runtimeCommit": "fe65ad4d1f00c06948cc74b096239567042526a4"
 }
