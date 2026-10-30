@@ -4,6 +4,10 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
+The homepage introduces the game, offers Play and Submit feedback, and shares creator Dustin Garcia's teaching purpose. It links to the [LBCC Digital Media Arts program](https://www.lbcc.edu/digitalmedia). Detailed controls and feature notes live at [`site/updates/index.html`](site/updates/index.html), with the playtest questionnaire at `site/playtest/`.
+
+**Editing the homepage:** replace `site/assets/home-hero-placeholder.svg` with the final hero illustration, or change the image source and dimensions in `site/index.html`. The current hero is an explicitly labeled placeholder, separate from game screenshots. Keep the first-person project story grounded in Dustin's account: college life from a student's perspective, trying solutions through play, and inspiring change in real life. His role/background are linked to his [official faculty profile](https://www.lbcc.edu/contact/dustin-garcia). Community contributions are an ongoing goal; do not turn that into claims of completed student work or institutional endorsement. Future game releases should update the Play URL/build label and detailed play notes without adding a release log to the homepage or replacing its hero with test screenshots.
+
 Current release: **2026-10-30-web-33**, focused NPC dialogue stability. Fresh presses, thought return and learning callbacks are corrected. Paid-only time tags overlap choices with colored lettering; cutscene skip has a rising meteor/fill meter. 2,861 assertions / 35 current game suites pass.
 
 Previous release: **2026-10-30-web-32**, choice-time tags and immediate clock feedback. Validated time costs sit beside choices; committed actions roll the clock and briefly show their actual time cost. 2,824 assertions across 34 current game suites pass. An older standalone dialogue harness retains unchanged baseline failures and is excluded from that count.

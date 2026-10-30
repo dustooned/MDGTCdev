@@ -3,68 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Playtest Mr. Duck Goes to College in your browser. A small campus, a neighborhood, and a little momentum.">
-  <title>Mr. Duck Goes to College · Beta</title>
+  <meta name="description" content="A game about college life, made to explore ideas through play. A community work in progress led by LBCC Digital Media Arts professor Dustin Garcia.">
+  <meta name="theme-color" content="#fff5df">
+  <title>Mr. Duck Goes to College · A game we build together</title>
   <style>
-    :root{color-scheme:light;--ink:#183d43;--paper:#fff3d8;--gold:#f0c560;--muted:#446369}
-    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 system-ui,sans-serif}
-    main{max-width:1100px;margin:auto;padding:44px 28px 60px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;font-weight:750}
-    .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;padding:28px 0 42px}h1{font:700 clamp(2.5rem,5vw,4.3rem)/1.08 Georgia,serif;margin:14px 0 24px;max-width:620px}
-    h2{font:700 1.65rem/1.2 Georgia,serif;margin:0 0 18px}p{margin:0 0 18px}.lede{font-size:1.15rem;max-width:560px}.quiet{color:var(--muted);font-size:.94rem}
-    .poster{width:100%;height:auto;border:3px solid var(--ink);border-radius:28px 7px 28px 7px;box-shadow:10px 10px 0 #e6dcbf;display:block}
-    .play{display:inline-block;background:var(--ink);color:var(--paper);padding:14px 25px;text-decoration:none;border-radius:8px;font-size:1.1rem;font-weight:750;margin:8px 0 16px}
-    a{color:var(--ink);text-underline-offset:3px}a:focus-visible{outline:3px solid #a65b27;outline-offset:5px}.play:hover{background:#2b5960}
-    .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{border:2px solid var(--ink);border-radius:14px;padding:26px;background:#fffaed}dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:9px 20px}dt{font-weight:750}dd{margin:0}
-    .feedback{margin-top:26px;background:var(--gold);border-radius:14px;padding:26px}footer{margin-top:32px;border-top:1px solid #bac0b1;padding-top:20px;font-size:.84rem;display:flex;flex-wrap:wrap;gap:10px 22px}
-    @media(max-width:760px){main{padding:24px 20px}.hero,.cards{grid-template-columns:1fr}.hero{gap:25px}.poster{max-width:520px}dl{gap:8px 13px}}
+    @font-face{font-family:Lilita;src:url('./playtest/fonts/LilitaOne.ttf') format('truetype');font-display:swap}
+    @font-face{font-family:Atkinson;src:url('./playtest/fonts/Atkinson-Regular.ttf') format('truetype');font-display:swap}
+    :root{color-scheme:light;--paper:#fff5df;--ink:#193e40;--muted:#486360;--gold:#efbd55;--line:#c6c6aa;--soft:#e4ead8;--accent:#a4482d}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.55 Atkinson,system-ui,sans-serif}
+    a{color:inherit;text-underline-offset:4px}a:hover{text-decoration-thickness:2px}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:6px}
+    .skip-link{position:absolute;top:10px;left:20px;transform:translateY(-200%);z-index:2;background:var(--ink);color:var(--paper);padding:10px 16px}
+    .skip-link:focus{transform:none}.wrap{max-width:1080px;margin:auto;padding-inline:28px}
+    .masthead{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:22px;border-bottom:1px solid var(--line);font-size:.86rem}
+    .wordmark{font-family:Lilita,system-ui,sans-serif;font-size:1.15rem;text-decoration:none}.masthead nav{display:flex;gap:24px}
+    .eyebrow{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;font-weight:bold;margin:0 0 12px}
+    .hero{text-align:center;padding-block:34px 48px}h1,h2,h3{font-family:Lilita,system-ui,sans-serif;font-weight:400;line-height:1.05;text-wrap:balance}
+    h1{font-size:clamp(3rem,7.2vw,6rem);letter-spacing:-.025em;margin:0 0 13px}h1 span{display:block;font-size:.66em;letter-spacing:.005em}
+    .tagline{font-size:1.17rem;margin:0 0 24px}.hero figure{margin:0 auto 26px;max-width:960px}
+    .hero-art{display:block;width:100%;height:auto;border:2px solid var(--ink);border-radius:24px 6px 24px 6px;box-shadow:6px 7px 0 #d8d8b9}
+    figcaption{font-size:.74rem;color:var(--muted);margin-top:11px;letter-spacing:.04em}
+    .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}.button{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:54px;padding:12px 26px;border:2px solid var(--ink);border-radius:9px;text-decoration:none;font-size:1.05rem;font-weight:bold;background:var(--ink);color:var(--paper);box-shadow:3px 4px 0 #c5cbb5}
+    .button.secondary{background:var(--gold);color:var(--ink)}.button:hover{background:#2e5755}.button.secondary:hover{background:#f8ce75}
+    .play-note{font-size:.83rem;color:var(--muted);margin:18px 0 0}.utility{margin:7px 0 0;font-size:.88rem}.utility a+a{margin-left:20px}
+    .about{border-top:2px solid var(--ink);padding-block:48px;display:grid;grid-template-columns:1fr 1.4fr;gap:62px}
+    h2{font-size:clamp(2.1rem,3.8vw,3.2rem);margin:0 0 26px}h3{font-size:1.55rem;margin:26px 0 13px}p{margin:0 0 17px}
+    .byline{border-left:3px solid var(--gold);padding-left:16px;color:var(--muted);font-size:.94rem}.byline strong{color:var(--ink);display:block;font-size:1.1rem}.byline a{display:inline-block;margin-top:7px}
+    .story{max-width:58ch}.story .intro{font-size:1.13rem}.story p:last-child{margin-bottom:0}
+    .community{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:32px;display:flex;align-items:center;justify-content:space-between;gap:36px;margin-bottom:34px}
+    .community h2{font-size:1.8rem;margin-bottom:10px}.community p{max-width:59ch;margin:0}.community>a{font-weight:bold;flex-shrink:0}
+    details{font-size:.92rem;max-width:680px;margin:0 auto 36px}summary{cursor:pointer;font-weight:bold;width:fit-content;padding:8px 0}details p{color:var(--muted);margin:10px 0}kbd{font:inherit;font-weight:bold}
+    footer{padding-block:22px 34px;border-top:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:16px;font-size:.77rem;color:var(--muted)}footer nav{display:flex;flex-wrap:wrap;gap:8px 18px}
+    @media(max-width:680px){.wrap{padding-inline:20px}.masthead{padding-block:18px}.masthead nav{gap:16px}.hero{padding-block:28px 36px}.tagline{font-size:1.03rem}.hero figure{margin-bottom:22px}.actions{gap:12px}.button{padding:12px 22px}.about{grid-template-columns:1fr;gap:28px;padding-block:34px}.about h2{max-width:15ch;margin-bottom:20px}.community{display:block;padding-block:26px}.community>a{display:inline-block;margin-top:18px}footer{display:block}footer nav{margin-top:12px}}
+    @media(max-width:380px){.actions{flex-direction:column}.masthead{font-size:.78rem}.masthead nav{gap:12px}.wordmark{font-size:1rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
-<main>
-  <div class="eyebrow">Public beta · Team &amp; student playtest</div>
-  <section class="hero" aria-labelledby="title">
-    <div>
-      <h1 id="title">Mr. Duck Goes<br>to College</h1>
-      <p class="lede">A comic-book city. A day of your own.</p>
-      <p>Walk or skate from the apartments through downtown and up the greenway to campus. Learn a greeting from Eli, help Nora get her saved seeds to the college, and hear what the neighbors think of the potholes. Visit people on their schedules, notice what needs fixing, and decide when to head home for sleep.</p>
-      <a class="play" href="./builds/2026-10-30-web-33/">Play the beta →</a>
-      <p class="quiet">Testing it for us? Use the <a href="./playtest/">playtest checklist and questions</a> (about 10 minutes after you play).</p>
-      <p class="quiet">No installation or account needed. Desktop browser recommended. Allow a moment for the first load.</p>
-    </div>
-    <img class="poster" src="./assets/dialogue-polish-web33.png" width="1280" height="720" alt="Only the paid greeting has a time tag, attached to its balloon; free questions and leaving have no tag.">
-  </section>
-  <div class="cards">
-    <section class="card" aria-labelledby="controls"><h2 id="controls">Get moving</h2>
-      <dl><dt>Move</dt><dd>WASD / arrows · left stick</dd><dt>Look</dt><dd>Right mouse drag / IJKL · right stick</dd><dt>Jump</dt><dd>Space · A</dd><dt>Ask / inspect</dt><dd>E · X</dd><dt>Board</dt><dd>Q / Alt · View / Select</dd><dt>Push faster</dt><dd>B · B</dd><dt>Pockets</dt><dd>Tab</dd><dt>Pause</dt><dd>Escape / P · Start</dd><dt>Debug info</dt><dd>F3</dd></dl>
-      <p class="quiet" style="margin-top:18px">Click inside the game to focus it and enable sound. If using a controller, press a button after connecting it. On an iPad, a keyboard or a controller works; there are no on-screen touch controls yet.</p>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="masthead">
+    <a class="wordmark" href="./" aria-label="Mr. Duck home">Mr. Duck</a>
+    <nav aria-label="Main"><a href="#about">The project</a><a href="https://www.lbcc.edu/digitalmedia">LBCC Digital Media ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow">Homegrown at Long Beach City College</p>
+      <h1 id="title">Mr. Duck<span>Goes to College</span></h1>
+      <p class="tagline">A little college life. A world of possibilities.</p>
+      <figure>
+        <!-- Replace this one image with the final hero illustration. Keep its aspect ratio. -->
+        <img class="hero-art" src="./assets/home-hero-placeholder.svg" width="1200" height="380" alt="Placeholder illustration: Mr. Duck overlooking a hilly neighborhood and a college campus.">
+        <figcaption>Hero artwork placeholder · A world still taking shape</figcaption>
+      </figure>
+      <div class="actions" aria-label="Play and participate">
+        <a class="button" href="./builds/2026-10-30-web-33/">Play the game <span aria-hidden="true">→</span></a>
+        <a class="button secondary" href="./playtest/">Submit feedback <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="play-note">Free browser playtest · Keyboard or controller · Work in progress</p>
+      <p class="utility"><a href="#about">What’s this project?</a><a href="./updates/">Playtest notes</a></p>
     </section>
-    <section class="card" aria-labelledby="try"><h2 id="try">A few things to try</h2>
-      <p>Dialogue cleanup: quick fresh presses work through NPC pages, inner thoughts return to settled choices, and learning feedback no longer forces a blank wait. Only choices that spend time have a tag, attached to the balloon with warm-colored lettering. Free choices have no time tag. Cutscene skip now has a meteor that rises as you hold Esc / B or hold the pointer on its meter; release cancels the hold.</p>
-      <p>A small outing with a visible result. Practice a greeting with Eli, ask Nora about her seeds, deliver the packet and bring her the planting news. Ask Nora? or Eli? for landmark directions. The planter starts empty; after delivery, leave the conversation to see its new growth. Cancel dismisses the brief camera beat, and reduced motion keeps the thought without moving the camera. Missing Nora’s closing time leaves the favor ready for another day.</p>
-      <p>Say a little; hear a response. Conversation choices now pair a short intention with a symbol. Inspect one for its full meaning and real cost, then confirm. NPCs answer the topic you chose, react to completed favors and keep optional advice behind a question. Shopkeepers finish their reply before opening the counter menu.</p>
-      <p>New comic UI: pockets now have an item grid and facing action page. Select an item, inspect its effect, then preview its cost before using it. Close stays visible. Story dialogue waits for you: Enter / A / E reveals, then a separate press continues; hold Esc / B to skip a scene. Pause opens a short notebook with rest, calendar and settings.</p>
-      <p><b>Fall days and scheduled nights.</b> Duck gets drowsy as the night goes on. His thoughts tell you how he feels; his bed lets you choose actual sleep hours and preview the next morning. Coffee and energy drinks buy time with a rebound afterward. Find Rest &amp; energy in Pause, or use a carried drink through pockets.</p>
-      <p>People now keep work, home and sleep schedules. Bea and Tavi stay out for the Friday 10–11:30 PM terrace sketch circle during Fall and Spring. The neighborhood has three new house blockouts and a warm place to gather. Final sleep faces and later event activities are still being made.</p>
-      <p>Open Pause for today's lead: Eli is in the campus admin court, Nora is on the downtown Common Ground plaza. Choices float as thought clouds; each one shows its time cost before anything happens. There is no deadline.</p>
-      <p>Talk to the neighbors on the sidewalks. Most have a complaint about the city before their tip. Rosa waits at the downtown bus stop and speaks Spanish; try her before and after Eli's greeting. Nora keeps seed-favor hours, 9:00 to 18:00; if you miss her, the favor waits for another day, and she remembers when you have helped before. Skating, jumps and tricks still use simple placeholder poses.</p>
-      <p>Mr. Duck has new eyes: big, hand-drawn and a bit googly. He rides goofy now, standing on his board instead of through it, kicks to push, and his eyes react to each trick, bail and landing.</p>
-      <p>Two first dungeon slices are in. On campus, the Forge's front door opens on ENGR 101: register at the desk, predict a cart's stop at the demo lane, then ride the stopping bay and brake at the right mark to land in the gold bay. At home, Room 2 is your roommate's overgrown garden: listen to the flowers, plant and mist three seeds, and find the AC button before their hair burns any longer. Progress in these rooms lasts for the visit, not the save, for now.</p>
-      <p>Shadows are drawn as comic-book halftone dots, now gentler: the ground carries a fine dot screen, walls keep a soft shadow, and dim light inside the dungeons no longer fills the floor with dots.</p>
-      <p>Playing on an iPad or another device with a keyboard or controller? Keys now keep working after you tap the screen or switch apps. The pause menu has a new “Check keyboard / controller” screen that shows every key and button the game receives. Music changes are smoother too: songs crossfade between areas, cutscenes and doors lower the music instead of cutting it, and the pause menu fades it out.</p>
-      <p>The dungeons now feel ancient. Step into the Forge or Room 2 and the camera opens beneath a watching stone face before the hall’s name rises out of the dark. Inside it is fog, fire light and old stone, and when a sealed gate gives way the camera turns to watch it sink into the floor.</p>
-      <p>A new beginning: a new game opens in Mr. Duck’s bare little room with a phone call from his mother. He never speaks; his thoughts drift up in a dark cloud. Trash with a flower that will not stop burning blocks the stairs, so the way out runs through his roommate’s overgrown room, a kettle with a few last drops, and a borrowed board. Already have a save? Choose “Start a new test day” on the title screen to see it.</p>
-      <p>Conversations read more naturally now. Eli reacts once you learn the greeting, the seed handoff opens straight on the seeds, and every choice card asks plainly (“Practice a Spanish greeting?”) with Yes or Not now. Exits say where you are, and if something isn’t ready yet, the prompt tells you who can help before you press E.</p>
-      <p>Some doors now open. Look for a gold mat: the administration offices on campus, the four downtown shops, the Pixel Parlor arcade (its cabinets are just for looking, for now) and two courtyard houses. Step inside with E; walk back out the door to leave. The art is still placeholder, but service staff and neighbors now appear at their scheduled hours.</p>
-      <p>The Common Ground vent wheezes. Borrow a fan at the campus equipment desk, learn to aim it at the airflow bench, then turn it to fit the plaza vent and run it on low or boost. Or ask the neighbors to help; Nora will thank you for whichever you did.</p>
-      <p>Sprint or push hard and a stamina wheel appears beside Mr. Duck. It drains as you go and fades once it refills; the gold dots under it are your fitness level. The screen otherwise stays clear: the clock and a prompt when there is something to do. Your lasting lead stays in the pause notebook. Press F3 (or use Pause) for the old debug readouts.</p>
-      <p class="quiet">Menus: A selects, B goes back, and left/right adjusts sliders. Your discoveries and settings save in this browser; private browsing or clearing site data may reset them.</p>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">From the professor</p>
+        <h2 id="about-title">A professor first.<br>A world we build together.</h2>
+        <p class="byline"><strong>Dustin Garcia</strong>Assistant Professor, Digital Media Arts<br>Long Beach City College<br><a href="https://www.lbcc.edu/contact/dustin-garcia">Meet Dustin ↗</a></p>
+      </div>
+      <div class="story">
+        <p class="intro">I started <em>Mr. Duck Goes to College</em> to share what it feels like to be a college student: finding your way, meeting people, making choices, and figuring things out as you go.</p>
+        <p>I’m a Cuban-Nicaragüense artist and educator. My background brings together comics, animation, design, and games. Teaching gives that work a shared purpose: helping students find their voice and see what they can make.</p>
+        <h3>Try an idea here. Take it into real life.</h3>
+        <p>I want this game to give students room to explore problems and try solutions through play. A virtual world can be a place to ask questions, see what changes, and imagine how things could be better. My hope is that those small discoveries inspire action beyond the screen.</p>
+        <p>This is a homegrown, community collaboration taking shape at Long Beach City College. It’s also an ongoing experiment in teaching: bringing digital media, game technology, and the social sciences into the same creative space. As it grows, the goal is to make room for students and collaborators to contribute art, stories, sound, research, and ideas.</p>
+      </div>
     </section>
-  </div>
-  <section class="feedback" aria-labelledby="feedback"><h2 id="feedback">Tell us what you notice</h2>
-    <p>Something confusing, broken, or fun? Include your browser, controls, what you tried, and what happened.</p>
-    <a href="./playtest/">Playtest checklist and questions</a> · <a href="https://github.com/dustooned/MDGTCdev/issues/new?template=bug-report.yml">Report a playtest finding on GitHub</a> · <a href="./feedback-template.txt" download>Download a feedback template</a>
-  </section>
-  <footer><span>Build 2026-10-30-web-33</span><a href="https://github.com/dustooned/MDGTCdev">Demo repository</a><a href="./legal/GODOT-LICENSE.txt">Godot license</a><a href="./legal/GODOT-COPYRIGHT.txt">Third-party notices</a><a href="./legal/Atkinson-OFL.txt">Atkinson font license</a><a href="./legal/LilitaOne-OFL.txt">Lilita One font license</a><a href="./legal/Nunito-OFL.txt">Nunito font license</a></footer>
-</main>
+    <section class="community" aria-labelledby="community-title">
+      <div><p class="eyebrow">Made here. Growing together.</p><h2 id="community-title">Come see what we’re making at LBCC.</h2><p>Curious about the art, design, and technology behind projects like this? Explore Digital Media Arts at Long Beach City College.</p></div>
+      <a href="https://www.lbcc.edu/digitalmedia">Explore Digital Media Arts <span aria-hidden="true">↗</span></a>
+    </section>
+    <details>
+      <summary>Before you play</summary>
+      <p>A desktop browser works best. Click inside the game to enable sound. Move with <kbd>WASD</kbd> or the arrows, use <kbd>E</kbd> to talk, and <kbd>Esc</kbd> to pause. A controller works too.</p>
+      <p>Things are still changing, and some art is temporary. After you play, the <a href="./playtest/">feedback page</a> walks you through sharing what you noticed. You can also <a href="./feedback-template.txt" download>download a feedback template</a>.</p>
+    </details>
+  </main>
+  <footer>
+    <span>A game in the making · Build 2026-10-30-web-33</span>
+    <nav aria-label="Project resources"><a href="https://github.com/dustooned/MDGTCdev">Project repository</a><a href="./legal/GODOT-LICENSE.txt">Godot</a><a href="./legal/GODOT-COPYRIGHT.txt">Third-party notices</a><a href="./legal/Atkinson-OFL.txt">Body font</a><a href="./legal/LilitaOne-OFL.txt">Title font</a></nav>
+  </footer>
+</div>
 </body>
 </html>
