@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-30-web-29**, the comic UI pass. Pockets have stable item selection, a facing action panel and pinned Close; story lines wait for separate reveal/advance presses. Pause is a compact notebook, and shared vector frames/type/tokens form an editable artist kit. 2,642 automated assertions pass across 31 suites. Human controller, listening, pacing and final art review remain open.
+Current release: **2026-10-30-web-30**, short intentions and contextual replies. Conversation choices use brief phrases and twelve semantic symbols; NPCs respond to the selected topic and actual favor progress. Shopkeepers finish speaking before the purchase screen opens. 2,715 assertions pass across 32 suites.
+
+Previous release: **2026-10-30-web-29**, the comic UI pass. Pockets have stable item selection, a facing action panel and pinned Close; story lines wait for separate reveal/advance presses. Pause is a compact notebook, and shared vector frames/type/tokens form an editable artist kit. 2,642 automated assertions pass across 31 suites. Human controller, listening, pacing and final art review remain open.
 
 Previous release: **2026-10-29-web-28**, Fall days and scheduled nights. Duck now gets tired, chooses actual sleep hours, and can borrow energy with a later crash. NPCs keep different work/home/sleep hours, and Bea and Tavi meet at the terrace on Friday nights. The neighborhood has new home and service-room blockouts, seasonal foliage and hillside rivals. Dialogue keeps its camera through choices and replies; inner thoughts have their own brief bubbles and deep sounds. The flip phone has an inbox and individual messages. **2,585 automated checks pass across 30 suites**; final sleep face art and human balance/controller/tablet review are still pending.
 
