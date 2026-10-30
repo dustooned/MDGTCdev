@@ -1,61 +1,62 @@
 {
-  "release": "2026-10-30-web-33",
-  "builtAt": "2026-10-30T20:52:31.537480+00:00",
-  "baseSource": "development/city-day (game source commit 890b24b937b93fb5c845facbe4cf47f2977e2c4f)",
+  "release": "2026-10-30-web-34",
+  "builtAt": "2026-10-30T22:15:55.256398+00:00",
+  "baseSource": "development/city-day (game source commit 0fcfad621064e265e07d063be46a8937eb57a252)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
-    "NPC progression uses fresh press/release handling and one buffered transition press; quick presses no longer vanish behind a time delay, and the interaction/X button works while talking",
-    "Returning from an inner thought restores settled choices without replaying their opening; next pages start lettering immediately and learning feedback stays visible and can be continued",
-    "A reproduced learning/progress callback error is fixed by updating the exhibit’s original paint under the comic shader",
-    "Only available positive-time choices show a cost tag; it overlaps its own balloon and uses warm-colored text. Free and unavailable choices have no numerical tag",
-    "Cutscenes have a rising meteor and fill meter for hold-to-skip with Esc/B or the pointer. Release cancels, focus loss resets, and outcomes still apply exactly once",
-    "Paginated cutscene balloons stay open between pages and unchanged text measurements are cached",
-    "Current game verification includes the reproduced NPC cases, skip behavior, real outing, saves, schedules, camera, time feedback and responsive UI; human device/feel/listening review remains open"
+    "Twenty original It’s a Good Life comic strips are embedded unchanged as small optional discoveries in thirteen interiors and seven outdoor walking spots",
+    "E / X opens a free manual reader; zoom, mouse/touch drag and keyboard/stick pan preserve the original full page. Reading pauses the day and keeps the camera in place",
+    "Each physical page has a QR sticker. A larger source card and explicit online buttons link to the original collection and chapter; nothing opens a site automatically",
+    "Found comics can be reread from a quiet pause-notebook archive. Exactly twenty known discovery flags persist alongside existing version-one exploration saves",
+    "Stable comic subject IDs and world anchors are ready for a later photography mission. Reading does not count as a photograph and no photo mission or reward is added",
+    "Existing dialogue, paid-only attached time cues, meteor skip, outings, sleep and NPC schedules remain covered by the current game verification"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 2861,
+  "automatedAssertionsPassed": 3139,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-30-web-33/index.audio.position.worklet.js",
+      "path": "builds/2026-10-30-web-34/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-30-web-33/index.audio.worklet.js",
+      "path": "builds/2026-10-30-web-34/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-30-web-33/index.html",
+      "path": "builds/2026-10-30-web-34/index.html",
       "bytes": 11093,
-      "sha256": "bcd3b498ebcb206084097d6f671a82f61e1b8809f4a5bcf61cc07a59d6f891de"
+      "sha256": "91a8df5973d20807cc6854eca17a307c82fb83ae8ce3107efee5e29d2d747b9b"
     },
     {
-      "path": "builds/2026-10-30-web-33/index.js",
+      "path": "builds/2026-10-30-web-34/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-30-web-33/index.pck",
-      "bytes": 25285488,
-      "sha256": "c2194201b47a68174fedea1d98cf96bef04838c0d12aac30e3e804856220e7a6"
+      "path": "builds/2026-10-30-web-34/index.pck",
+      "bytes": 29656320,
+      "sha256": "65dde324b8388c4964746206587dc75be06d0e4e5227ec9c8457fe9024ae4578"
     },
     {
-      "path": "builds/2026-10-30-web-33/index.png",
+      "path": "builds/2026-10-30-web-34/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-30-web-33/index.wasm",
+      "path": "builds/2026-10-30-web-34/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
   ],
-  "automatedAssertionsNote": "Current City Day verifier: 2861 assertions / 35 suites pass; 28 progression/skip checks and 57 time-feedback/layout checks. 489 protected inherited files unchanged. Five reproduced pre-change NPC failures now pass.",
-  "sourceCommit": "890b24b937b93fb5c845facbe4cf47f2977e2c4f",
-  "runtimeCommit": "890b24b937b93fb5c845facbe4cf47f2977e2c4f"
+  "automatedAssertionsNote": "Current City Day verifier: 3139 assertions / 36 suites pass, including 277 original-comic approach/reader/archive/save checks. 488 protected inherited files unchanged. Native reader and QR renders reviewed; software QR decoding succeeds. Human phone-camera scanning and physical controller feel remain open.",
+  "sourceCommit": "0fcfad621064e265e07d063be46a8937eb57a252",
+  "runtimeCommit": "0fcfad621064e265e07d063be46a8937eb57a252",
+  "originalComicStrips": 20,
+  "physicalPhoneQrScanVerified": false
 }
