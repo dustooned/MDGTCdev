@@ -4,7 +4,9 @@
 
 A browser demo for the development team, students, and other playtesters. No Godot installation or GitHub account is needed to play. A recent desktop browser with WebGL 2 is recommended. Keyboard and controller controls are supported.
 
-Current release: **2026-10-30-web-31**, the complete outdoor seed outing. Physical seeds/planter progress, short landmark direction questions, a post-conversation object reveal and quiet thoughts/notifications. 2,773 assertions across 33 suites pass, including the real on-foot outing and next-day return.
+Current release: **2026-10-30-web-32**, choice-time tags and immediate clock feedback. Validated time costs sit beside choices; committed actions roll the clock and briefly show their actual time cost. 2,824 assertions across 34 current game suites pass. An older standalone dialogue harness retains unchanged baseline failures and is excluded from that count.
+
+Previous release: **2026-10-30-web-31**, the complete outdoor seed outing. Physical seeds/planter progress, short landmark direction questions, a post-conversation object reveal and quiet thoughts/notifications. 2,773 assertions across 33 suites pass, including the real on-foot outing and next-day return.
 
 Previous release: **2026-10-30-web-30**, short intentions and contextual replies. Conversation choices use brief phrases and twelve semantic symbols; NPCs respond to the selected topic and actual favor progress. Shopkeepers finish speaking before the purchase screen opens. 2,715 assertions pass across 32 suites.
 

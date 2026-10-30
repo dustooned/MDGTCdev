@@ -1,61 +1,61 @@
 {
-  "release": "2026-10-30-web-31",
-  "builtAt": "2026-10-30T18:42:50.434555+00:00",
-  "baseSource": "development/city-day (game source commit ea942422a03bb938903a5e9711c30f90b9a5ee97)",
+  "release": "2026-10-30-web-32",
+  "builtAt": "2026-10-30T19:13:55.993806+00:00",
+  "baseSource": "development/city-day (game source commit 805841bf57a897f93df3b594bc4f0db4388d202b)",
   "engine": "Godot 4.4.1",
   "threads": false,
   "changes": [
-    "Complete Eli–Nora seed outing with visible saved packet, empty-to-planted campus planter, physical wayfinding signs and optional landmark direction questions",
-    "A brief planter outcome camera waits until the conversation finishes; cancel restores travel and reduced motion gives the thought without taking the camera",
-    "Stage directions belong to Duck’s held inner thoughts; notifications, passive observations and tiredness remarks take separate presentation beats",
-    "Forty-two dedicated outing checks include a real on-foot route, free reading, stable conversation camera, late acceptance, preserved planting news through sleep and next-opening return",
-    "Includes the source choice-art infrastructure: twelve replaceable symbols, four independent balloon states, a lock marker and artist workshop",
-    "Original seed transactions, rewards, desk hours, sleep rules and save formats stay authoritative; existing saves load normally",
-    "Includes prior comic UI, inventory, Fall calendar, scheduled residents and sleep systems; final prop art, human feel, physical controller and independent listening review remain open"
+    "Small graphical clock-and-number tags beside conversation choices show the validated action cost, zero for known free choices and a dash for unavailable actions",
+    "Successfully committed action time rolls through the main clock with a short positive-cost receipt, then returns to normal running and conversation visibility",
+    "Previews, cancellation, refused/stale actions, failed saves, free actions and ordinary travel ticks do not play a cost animation or spend extra time",
+    "Midnight, rapid consecutive commits, hidden feedback, reset and reduced motion are handled; the clock and badge artwork/timing are editable through the shared UI kit",
+    "Responsive cost tags share the original choice tap target and preserve short labels, NPC replies, camera framing and normal inputs",
+    "Current City Day checks include 49 dedicated time-feedback assertions and the complete on-foot outing; an older standalone dialogue harness has unchanged baseline failures and is not counted as passing",
+    "Includes web-31 outdoor seed outing, editable choice art, comic UI, inventory, Fall calendar, NPC schedules and sleep systems; human feel/device/listening review remains open"
   ],
   "playerModel": "mrduck4_rig_test.glb",
-  "automatedAssertionsPassed": 2773,
+  "automatedAssertionsPassed": 2824,
   "physicalControllerFeelVerified": false,
   "humanPlaytested": false,
   "textEncoding": "UTF-8",
   "files": [
     {
-      "path": "builds/2026-10-30-web-31/index.audio.position.worklet.js",
+      "path": "builds/2026-10-30-web-32/index.audio.position.worklet.js",
       "bytes": 3149,
       "sha256": "347b512529c5dca302093f7b9de6d184dd09d10e9a6fba62cbab098a891b2368"
     },
     {
-      "path": "builds/2026-10-30-web-31/index.audio.worklet.js",
+      "path": "builds/2026-10-30-web-32/index.audio.worklet.js",
       "bytes": 7298,
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     {
-      "path": "builds/2026-10-30-web-31/index.html",
+      "path": "builds/2026-10-30-web-32/index.html",
       "bytes": 11093,
-      "sha256": "76173fdee4ed2e7811404dfd0fc6944afb793c44bd67ced79c6e9d4822a4cb21"
+      "sha256": "fa9a68c02dbb639d86df77da26018ea50af60f8308ab3e945ed80a97f2aaaca8"
     },
     {
-      "path": "builds/2026-10-30-web-31/index.js",
+      "path": "builds/2026-10-30-web-32/index.js",
       "bytes": 317142,
       "sha256": "19eb180d568bb8e17bcf4c72ca034ed3af44deeb90304deefee4e665562dfe31"
     },
     {
-      "path": "builds/2026-10-30-web-31/index.pck",
-      "bytes": 25269760,
-      "sha256": "8a7726ed0adf166bb3f2f2da62e85f40132a4a931f0ce0d31397850a8e1e9ba3"
+      "path": "builds/2026-10-30-web-32/index.pck",
+      "bytes": 25279456,
+      "sha256": "363965c59ccf2addc211ab1bfdb33adbc3afdd908d3c6065aa0bac60b1d9cbed"
     },
     {
-      "path": "builds/2026-10-30-web-31/index.png",
+      "path": "builds/2026-10-30-web-32/index.png",
       "bytes": 21443,
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
-      "path": "builds/2026-10-30-web-31/index.wasm",
+      "path": "builds/2026-10-30-web-32/index.wasm",
       "bytes": 43699190,
       "sha256": "e4a43dbae28662b2a68f6136857a94db6695430901515800b9883f6327cb7116"
     }
   ],
-  "automatedAssertionsNote": "City Day verify: 2773 assertions across 33 suites; 490 protected inherited files unchanged. Real-controller on-foot route and native GPU outing screens checked; human/device/listening review remains open.",
-  "sourceCommit": "ea942422a03bb938903a5e9711c30f90b9a5ee97",
-  "runtimeCommit": "ea942422a03bb938903a5e9711c30f90b9a5ee97"
+  "automatedAssertionsNote": "Current City Day verifier: 2824 assertions / 34 suites pass; 490 protected inherited files unchanged. Separately, the older standalone dialogue harness has the same 115 baseline failures before and after, with no new cases; it is excluded from the passing count.",
+  "sourceCommit": "805841bf57a897f93df3b594bc4f0db4388d202b",
+  "runtimeCommit": "805841bf57a897f93df3b594bc4f0db4388d202b"
 }
